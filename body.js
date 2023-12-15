@@ -4,7 +4,7 @@ import './App.css';
 import {Link, Outlet, BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import GoodRecipes from './recipes/GoodRecipes';
 import ImportedButton from './buttons/buttons.js';
-function Homepage() {
+function Body() {
   return (
     <div className="App">
       <header className="App-header">
@@ -13,8 +13,8 @@ function Homepage() {
         <p>
          Tyler's super secret cookbook. We have all sorts of recipes for you to check out! 
 	<div>
-		<button className="Good-Recipe-Button">  View the Good stuff </button>
-		<button className="Bad-Recipe-Button" > View the shitty stuff </button>
+		<button className="Good-Recipe-Button" onClick={<GoodRecipes />}>  View the Good stuff </button>
+		<button className="Bad-Recipe-Button" onClick={<GoodRecipes />}> View the shitty stuff </button>
 	</div>
         </p>
 	<div>
@@ -25,4 +25,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Body;

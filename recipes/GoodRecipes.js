@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import './GoodRecipes.css';
 //import {Button} from ./buttons/button.js
 
 function GoodRecipes() {

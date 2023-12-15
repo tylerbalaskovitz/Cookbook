@@ -10,7 +10,7 @@ function App() {
   return (
 	<div>
 	<p>
-		This is the footer. Contact information:
+		Contact information: Tyler Balaskovitz (231) 260-8201. Email: tylerbalaskovitz@yahoo.com
 	</p>
 	</div>
   );
