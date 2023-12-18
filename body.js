@@ -13,20 +13,22 @@ function Body() {
   const [badRecipeState, setBadRecipeState] = useState(false);
 
   function handleGoodRecipeClick(){
-	if (goodRecipeState == false){
+	if (goodRecipeState === false){
 		setGoodRecipeState(true)
 		console.log("handle Good Recipe is clicked")
 	} else {
 		setGoodRecipeState(false)
+		console.log("handle Good Recipe is clicked again")
 	}
   }	
 
   function handleBadRecipeClick(){
-	if (goodRecipeState == false){
-		setGoodRecipeState(true)
+	if (badRecipeState === false){
+		setBadRecipeState(true)
 		console.log("handle bad Recipe is clicked")
 	} else {
-		setGoodRecipeState(false)
+		setBadRecipeState(false)
+		console.log("handle bad  Recipe is clicked again")
 	}
   }	
 
@@ -43,7 +45,12 @@ function Body() {
 	</div>
         </p>
 	<div>
-		Good Recipe State {goodRecipeState}
+		<div>
+		Good Recipe State {goodRecipeState.toString()}
+		</div>
+		<div>
+		Bad Recipe State {badRecipeState.toString()}
+		</div>
 		<ImportedButton />
 	</div>
 	</header>
