@@ -15,6 +15,7 @@ function Body() {
   function handleGoodRecipeClick(){
 	if (goodRecipeState == false){
 		setGoodRecipeState(true)
+		console.log("handle Good Recipe is clicked")
 	} else {
 		setGoodRecipeState(false)
 	}
@@ -23,6 +24,7 @@ function Body() {
   function handleBadRecipeClick(){
 	if (goodRecipeState == false){
 		setGoodRecipeState(true)
+		console.log("handle bad Recipe is clicked")
 	} else {
 		setGoodRecipeState(false)
 	}
@@ -36,11 +38,12 @@ function Body() {
         <p>
          Tyler's super secret cookbook. We have all sorts of recipes for you to check out! 
 	<div>
-		<button className="Good-Recipe-Button" onClick={<handleGoodRecipeClick />}>  View the Good stuff </button>
-		<button className="Bad-Recipe-Button" onClick={<handleBadRecipeClick />}> View the shitty stuff </button>
+		<button className="Good-Recipe-Button" onClick={handleGoodRecipeClick}>  View the Good stuff </button>
+		<button className="Bad-Recipe-Button" onClick={handleBadRecipeClick}> View the shitty stuff </button>
 	</div>
         </p>
 	<div>
+		Good Recipe State {goodRecipeState}
 		<ImportedButton />
 	</div>
 	</header>
