@@ -1,19 +1,3 @@
-
-import logo from './Cookbook.gif'
-import './App.css';
-import {Link, Outlet, BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import GoodRecipes from './recipes/GoodRecipes';
-import logo from './Cookbook.gif';
-import logo from './Cookbook.gif'
-import './App.css';
-import GoodRecipes from './recipes/GoodRecipes.js';
-import BadRecipes from './recipes/BadRecipes.js';
-import ImportedButton from './buttons/buttons.js';
-import React, {useState} from 'react';
-//Test1
-
-function Body() {
-function Body(){
 import logo from './Cookbook.gif';
 import './App.css';
 import GoodRecipes from './recipes/GoodRecipes.js';
@@ -47,13 +31,6 @@ function Body(){
 	}
   }	
 
-	if (badRecipeState){
-		setBadRecipeState(false)
-	} else {
-		setBadRecipeState(true)
-	}
-  }	
-
 	function goodRecipeRender() {
 		if (goodRecipeState){
 			setGoodRecipeState(false)
@@ -70,8 +47,6 @@ function Body(){
         <p>
          Tyler's super secret cookbook. We have all sorts of recipes for you to check out! 
 	<div>
-		<button className="Good-Recipe-Button" onClick={handleGoodRecipeClick}>  View the Good stuff </button>
-		<button className="Good-Recipe-Button" onClick={goodRecipeRender}>  View the Good stuff </button>
 		<button className="Good-Recipe-Button" onClick={goodRecipeRender}>  View the Good stuff </button>
 		<button className="Bad-Recipe-Button" onClick={handleBadRecipeClick}> View the shitty stuff </button>
 	</div>
