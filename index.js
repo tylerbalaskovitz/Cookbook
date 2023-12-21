@@ -1,9 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
 import ReactDOM from 'react-dom/client';
-=======
 import ReactDOM from 'react-dom/client'
->>>>>>> cd186b8 (Test)
 import './index.css';
 import App from './App';
 import GoodRecipes from './recipes/GoodRecipes.js';
