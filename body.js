@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import logo from './Cookbook.gif'
 import './App.css';
@@ -6,13 +7,16 @@ import {Link, Outlet, BrowserRouter as Router, Routes, Route} from 'react-router
 import GoodRecipes from './recipes/GoodRecipes';
 =======
 import logo from './Cookbook.gif';
+=======
+import logo from './Cookbook.gif'
+>>>>>>> a9e4887 (Test)
 import './App.css';
 import GoodRecipes from './recipes/GoodRecipes.js';
 import BadRecipes from './recipes/BadRecipes.js';
 >>>>>>> cd186b8 (Test)
 import ImportedButton from './buttons/buttons.js';
 import React, {useState} from 'react';
-//This is for the push
+//Test1
 
 <<<<<<< HEAD
 function Body() {
