@@ -1,28 +1,28 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 import logo from './Cookbook.gif'
 import './App.css';
 import {Link, Outlet, BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import GoodRecipes from './recipes/GoodRecipes';
-=======
 import logo from './Cookbook.gif';
-=======
 import logo from './Cookbook.gif'
->>>>>>> a9e4887 (Test)
 import './App.css';
 import GoodRecipes from './recipes/GoodRecipes.js';
 import BadRecipes from './recipes/BadRecipes.js';
->>>>>>> cd186b8 (Test)
 import ImportedButton from './buttons/buttons.js';
 import React, {useState} from 'react';
 //Test1
 
-<<<<<<< HEAD
 function Body() {
-=======
 function Body(){
->>>>>>> cd186b8 (Test)
+import logo from './Cookbook.gif';
+import './App.css';
+import GoodRecipes from './recipes/GoodRecipes.js';
+import BadRecipes from './recipes/BadRecipes.js';
+import ImportedButton from './buttons/buttons.js';
+import React, {useState} from 'react';
+
+
+function Body(){
 	//Having the state set before the return statement but still withhin the function body
   const [goodRecipeState, setGoodRecipeState] = useState(false);
   const [badRecipeState, setBadRecipeState] = useState(false);
@@ -38,7 +38,6 @@ function Body(){
   }	
 
   function handleBadRecipeClick(){
-<<<<<<< HEAD
 	if (badRecipeState === false){
 		setBadRecipeState(true)
 		console.log("handle bad Recipe is clicked")
@@ -48,7 +47,6 @@ function Body(){
 	}
   }	
 
-=======
 	if (badRecipeState){
 		setBadRecipeState(false)
 	} else {
@@ -64,7 +62,6 @@ function Body(){
 		}
 	}
 
->>>>>>> cd186b8 (Test)
   return (
     <div className="App">
       <header className="App-header">
@@ -73,11 +70,9 @@ function Body(){
         <p>
          Tyler's super secret cookbook. We have all sorts of recipes for you to check out! 
 	<div>
-<<<<<<< HEAD
 		<button className="Good-Recipe-Button" onClick={handleGoodRecipeClick}>  View the Good stuff </button>
-=======
 		<button className="Good-Recipe-Button" onClick={goodRecipeRender}>  View the Good stuff </button>
->>>>>>> cd186b8 (Test)
+		<button className="Good-Recipe-Button" onClick={goodRecipeRender}>  View the Good stuff </button>
 		<button className="Bad-Recipe-Button" onClick={handleBadRecipeClick}> View the shitty stuff </button>
 	</div>
         </p>
@@ -90,13 +85,10 @@ function Body(){
 		</div>
 		<ImportedButton />
 	</div>
-<<<<<<< HEAD
-=======
 	<div>
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 	</div>
->>>>>>> cd186b8 (Test)
 	</header>
 	    </div>
   );

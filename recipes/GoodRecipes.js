@@ -1,16 +1,14 @@
-<<<<<<< HEAD
 import {Link} from 'react-router-dom';
 import './GoodRecipes.css';
 //import {Button} from ./buttons/button.js
-=======
 import './GoodRecipes.css';
 import React, {useState} from 'react';
->>>>>>> cd186b8 (Test)
+import './GoodRecipes.css';
+import React, {useState} from 'react';
 
 function GoodRecipes() {
   return (
     <div className="GoodRecipes">
-<<<<<<< HEAD
       <header className="GoodRecipes-header">
 		These are the Good Recipes. Take a Pick
         <p>
@@ -20,14 +18,12 @@ function GoodRecipes() {
 	Shit sandwich
 	</div>
 	</header>
-=======
       <div className="GoodRecipes-header">These are the Good Recipes. Take a Pick
        Welcome to the recipes section where things get awfully delicious 
 	<div>
 	Shit sandwich
 	</div>
 	</div>
->>>>>>> cd186b8 (Test)
     </div>
   );
 }
