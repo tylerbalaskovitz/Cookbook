@@ -1,7 +1,7 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
 
-function ShitSandwich() {
+function CrapfilledCreamSoup() {
   return (
     <div className="GoodRecipes">
       <div className="GoodRecipes-header">These are the Good Recipes. Take a Pick
@@ -14,4 +14,4 @@ function ShitSandwich() {
   );
 }
 
-export default ShitSandwich;
+export default CrapfilledCreamSoup;

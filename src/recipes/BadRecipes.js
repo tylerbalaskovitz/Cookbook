@@ -1,4 +1,8 @@
 import './GoodRecipes.css';
+import CrapfilledCreamsoup from './badRecipeComponents/CrapfilledCreamsoup.js
+import DiarheaDejour from './badRecipeComponents/DiarheaDejour.js
+import shitSandwichfrom './badRecipeComponents/shitSandwich.js
+import  CrapAndCustard from './badRecipeComponents/CrapAndCustard.js
 import React, {useState} from 'react';
 
 function BadRecipes() {
