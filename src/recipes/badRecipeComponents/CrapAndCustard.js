@@ -2,6 +2,7 @@ import './GoodRecipes.css';
 import React, {useState} from 'react';
 import CrapAndCustard from '../../images/crapandcustard.jpg'
 import CrapAndCustardData from './CrapAndCustardData.json'
+import TaskMapper from '../../taskMapper.js'
 
 function CrapAndCustard({crapAndCustard}) {
   return (
