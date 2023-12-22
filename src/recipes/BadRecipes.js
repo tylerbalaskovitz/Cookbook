@@ -2,7 +2,7 @@ import './GoodRecipes.css';
 import CrapfilledCreamsoup from './badRecipeComponents/CrapfilledCreamsoup.js
 import DiarheaDejour from './badRecipeComponents/DiarheaDejour.js
 import shitSandwichfrom './badRecipeComponents/shitSandwich.js
-import  CrapAndCustard from './badRecipeComponents/CrapAndCustard.js
+import CrapAndCustard from './badRecipeComponents/CrapAndCustard.js
 import React, {useState} from 'react';
 
 function BadRecipes() {
@@ -14,7 +14,7 @@ function BadRecipes() {
 	Shit sandwich
 	</div>
 	<div>
-	Crap and Custard
+		<CrapAndCustard />
 	</div>
 	<div>
 	Diarhea De Jour
