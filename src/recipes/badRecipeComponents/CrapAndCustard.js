@@ -1,14 +1,19 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
+import CrapAndCustard from '../../images/crapandcustard.jpg'
+import CrapAndCustardData from './CrapAndCustardData.json'
 
-function CrapAndCustard() {
+function CrapAndCustard({crapAndCustard}) {
   return (
-    <div className="GoodRecipes">
-      <div className="GoodRecipes-header">These are the Good Recipes. Take a Pick
-       Welcome to the recipes section where things get awfully delicious 
+  	<header>
+	CrapAndCustard
+	</header>
+    <div className="CookingSteps">
+	Crap and Custard is an old time classic that is shared with the friends and family through generations of poverty, despair, and comedy. So, have a laugh and share with your unwitting friends, inlaws and strangers
 	<div>
 	Shit sandwich
 	</div>
+	<div className="PictureOfRecipe">
 	</div>
     </div>
   );
