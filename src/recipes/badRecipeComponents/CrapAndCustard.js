@@ -1,4 +1,10 @@
-import './GoodRecipes.css'
+import './GoodRecipes.css';
+import React, {useState} from 'react';
+import CrapAndCustardImage from '../../images/crapandcustard.jpg'
+import crapAndCustardData from './CrapAndCustardData.json'
+import TaskMapper from '../../taskMapper.js'
+
+function CrapAndCustard({crapAndCustardList}) => {
 const [crapAndCustardData, setCrapAndCustardData] = useState(CrapAndCustardData)
 const [renderRecipe, setRenderRecipe] = useState(false);
 
@@ -23,7 +29,8 @@ function renderRecipe() {
 		See Recipe 
 	</button>
     	<div>
-		{renderRecipe ? < /> : null }
+		{renderRecipe ? {crapAndCustardList.map(todo => {
+			return (<TaskMapper taskmapper={taskmapper}/>) : null })}}
 	</div>
     </div>
   );

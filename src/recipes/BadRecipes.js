@@ -1,15 +1,15 @@
 import './GoodRecipes.css';
-import CrapfilledCreamsoup from './badRecipeComponents/CrapfilledCreamsoup.js
-import DiarheaDejour from './badRecipeComponents/DiarheaDejour.js
-import shitSandwichfrom './badRecipeComponents/shitSandwich.js
-import CrapAndCustard from './badRecipeComponents/CrapAndCustard.js
+import CrapfilledCreamSoup from './badRecipeComponents/CrapfilledCreamSoup.js';
+import DiarheaDejour from './badRecipeComponents/DiarheaDeJour.js';
+import shitSandwich from './badRecipeComponents/shitSandwich.js';
+import CrapAndCustard from './badRecipeComponents/CrapAndCustard.js';
 import React, {useState} from 'react';
 import CrapAndCustardList from './badRecipeComponents/CrapAndCustardData.json'
 
 function BadRecipes() {
 //here there will need to be four different use states, one for each of the recipes
 // that are being passed in.
-const [crapAndCustardList, setCrapAndCustardList] = useState(CrapAndCustardData)
+const [crapAndCustardList, setCrapAndCustardList] = useState(CrapAndCustardList)
 
   return (
     <div className="GoodRecipes">
