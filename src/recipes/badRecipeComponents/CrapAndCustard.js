@@ -17,7 +17,7 @@ function renderRecipeButton() {
   return (
 	<div>
   	<header>
-	CrapAndCustard
+	'Crap And Custard'
 	</header>
     <div className="CookingSteps">
 	Crap and Custard is an old time classic that is shared with the friends and family through generations of poverty, despair, and comedy. So, have a laugh and share with your unwitting friends, inlaws and strangers
@@ -26,7 +26,7 @@ function renderRecipeButton() {
 		{CrapAndCustardImage}
 	</div>
 		<div>
-		<button className=recipeButton onClick={renderRecipeButton}> 
+		<button className="recipeButton" onClick={renderRecipeButton}> 
 			See Recipe 
 		</button>
 		</div>
