@@ -19,9 +19,11 @@ function renderRecipeButton() {
 	<div>
   	<header>
 	Crap And Custard
+	{!renderRecipe && 
 		<button className="recipeButton" onClick={renderRecipeButton}> 
-			See Recipe 
+			See Recipe
 		</button>
+	}
 	</header>
 	{renderRecipe && 
 	    <div>
@@ -31,10 +33,13 @@ function renderRecipeButton() {
 		<div className="PictureOfRecipe">
 		<img src={CrapAndCustardImage} className="FoodImage" alt="food" />
 		</div>
-		<div>
+		<li>
 		  {crapAndCustardList.map(CrapAndCustardList => {
 			return (<TaskMapper taskMapper={CrapAndCustardList}/>)})} 
-		</div>
+		</li>
+		<button className="recipeButton" onClick={renderRecipeButton}> 
+			{renderRecipe ? "Hide Recipe" : "See Recipe"}
+		</button>
 		</div>
 		}
     </div>
