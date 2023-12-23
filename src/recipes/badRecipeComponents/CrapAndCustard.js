@@ -30,10 +30,16 @@ function renderRecipeButton() {
 			See Recipe 
 		</button>
 		</div>
+		if (renderRecipe) { 
 		<div>
-			{renderRecipe ? {crapAndCustardList.map(todo => {
-				return (<TaskMapper taskmapper={taskmapper}/>) : null })}}
+		  {crapAndCustardList.map(taskmapper => {
+			return (<TaskMapper taskmapper={taskmapper}/>)})} 
 		</div>
+    		} else {
+		<div>
+			return null;
+		</div>
+		}
     </div>
   );
 }

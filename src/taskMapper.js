@@ -3,7 +3,7 @@ import React from 'react';
 const TaskMapper = ({taskMapper}) => {
 	return (
 		<div>
-		{todo.task}
+		{taskMapper.step}
 		</div>
 	);
 }
