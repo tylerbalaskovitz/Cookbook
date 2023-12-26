@@ -1,11 +1,11 @@
 
 import logo from './Cookbook.gif'
 import './App.css';
-import {Link, BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import {Link, BrowserRouter as Router, Routes, Route, Navigate, createContext} from 'react-router-dom';
 import GoodRecipes from './recipes/GoodRecipes';
 import ImportedButton from './buttons/buttons.js';
 
-function App() {
+function Header() {
   return (
 	<div>
 	<p>
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default Header;

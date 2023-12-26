@@ -52,12 +52,6 @@ function Body(){
 	</div>
         </p>
 	<div>
-		<div>
-		Good Recipe State {goodRecipeState.toString()}
-		</div>
-		<div>
-		Bad Recipe State {badRecipeState.toString()}
-		</div>
 		<ImportedButton />
 	</div>
 	<div>
