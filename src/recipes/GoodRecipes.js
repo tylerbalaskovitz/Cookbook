@@ -12,15 +12,18 @@ function GoodRecipes() {
        Welcome to the recipes section where things get awfully delicious 
         </p>
 	<div>
-	Shit sandwich
+	Sugar Cookies
+	</div>
+	<div>
+	Jiaozi	
+	</div>
+	<div>
+	Beef Meatballs	
+	</div>
+	<div>	
+	Pizza
 	</div>
 	</header>
-      <div className="GoodRecipes-header">These are the Good Recipes. Take a Pick
-       Welcome to the recipes section where things get awfully delicious 
-	<div>
-	Shit sandwich
-	</div>
-	</div>
     </div>
   );
 }
