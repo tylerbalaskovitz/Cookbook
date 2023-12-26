@@ -5,6 +5,7 @@ import shitSandwich from './badRecipeComponents/shitSandwich.js';
 import CrapAndCustard from './badRecipeComponents/CrapAndCustard.js';
 import React, {useState} from 'react';
 import CrapAndCustardList from './badRecipeComponents/CrapAndCustardData.json'
+import DiarheaDeJourList from './badRecipeComponents/DiarheaDeJourData.json'
 
 function BadRecipes() {
 //here there will need to be four different use states, one for each of the recipes
@@ -22,7 +23,7 @@ const [crapAndCustardList, setCrapAndCustardList] = useState(CrapAndCustardList)
 		<CrapAndCustard crapAndCustardList={crapAndCustardList} />
 	</div>
 	<div>
-	Diarhea De Jour
+		<DiarheaDejour diarheaDeJourList={diarehaDeJourList} />
 	</div>
 	<div>
 	Crapfilled Cream Soup
