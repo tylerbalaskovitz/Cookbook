@@ -7,6 +7,7 @@ import React, {useState} from 'react';
 import CrapAndCustardList from './badRecipeComponents/CrapAndCustardData.json'
 import DiarheaDeJourList from './badRecipeComponents/DiarheaDeJourData.json'
 import ShitSandwichList from './badRecipeComponents/ShitSandwichData.json'
+import CrapFilledCreamSoupList from './badRecipeComponents/CrapFilledCreamSoupData.json'
 
 function BadRecipes() {
 //here there will need to be four different use states, one for each of the recipes
@@ -14,6 +15,7 @@ function BadRecipes() {
 const [crapAndCustardList, setCrapAndCustardList] = useState(CrapAndCustardList)
 const [diarheaDeJourList, setDiarheaDeJourList] = useState(DiarheaDeJourList)
 const [shitSandwichList, setShitSandwichList] = useState(ShitSandwichList)
+const [crapFilledCreamSoupList, setCrapFilledCreamSoupList] = useState(CrapFilledCreamSoupList)
 
   return (
     <div className="GoodRecipes">
@@ -29,7 +31,7 @@ const [shitSandwichList, setShitSandwichList] = useState(ShitSandwichList)
 		<DiarheaDejour diarheaDeJourList={diarheaDeJourList} />
 	</div>
 	<div>
-	Crapfilled Cream Soup
+		<CrapfilledCreamSoup crapFilledCreamSoupList={crapFilledCreamSoupList} />
 	</div>
 	</div>
     </div>
