@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom';
-//import {Button} from ./buttons/button.js
 import './GoodRecipes.css';
 import React, {useState} from 'react';
 
