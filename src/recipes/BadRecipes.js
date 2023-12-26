@@ -11,6 +11,7 @@ function BadRecipes() {
 //here there will need to be four different use states, one for each of the recipes
 // that are being passed in.
 const [crapAndCustardList, setCrapAndCustardList] = useState(CrapAndCustardList)
+const [diarheaDeJourList, setDiarheaDeJourList] = useState(DiarheaDeJourList)
 
   return (
     <div className="GoodRecipes">
@@ -23,7 +24,7 @@ const [crapAndCustardList, setCrapAndCustardList] = useState(CrapAndCustardList)
 		<CrapAndCustard crapAndCustardList={crapAndCustardList} />
 	</div>
 	<div>
-		<DiarheaDejour diarheaDeJourList={diarehaDeJourList} />
+		<DiarheaDejour diarheaDeJourList={diarheaDeJourList} />
 	</div>
 	<div>
 	Crapfilled Cream Soup

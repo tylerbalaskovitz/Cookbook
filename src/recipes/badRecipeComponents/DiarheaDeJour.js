@@ -1,6 +1,6 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
-import DiarheaDeJourImage from '../../images/DiarheaDeJour.jpg'
+import DiarheaDeJourImage from '../../images/DiarheaDejour.jpg'
 import TaskMapper from '../../taskMapper.js'
 import DiarheaDeJourList from './DiarheaDeJourData.json'
 
