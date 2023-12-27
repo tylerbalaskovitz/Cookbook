@@ -1,0 +1,7 @@
+====FEATURES TO ADD====
+Make navbar and style it so it fits in nicely with the rest of the app.
+Have Navbar clicks open and close components.
+When clicking to open another component, have the other components close.
+Have routing occur to another area, mainly the timer section 
+Create a timer
+Style so it looks somewhat professional
