@@ -1,34 +1,30 @@
 [{
    "id": 1,
-   "step": "Mix the crap you took in a bowl for five minutes",
+   "step": "Heat the vegetable oil in a pot over medium heat.",
    "complete": false
  }, {
    "id": 2,
-   "step": "Put in oven to get a fresh poop-filled aroma",
+   "step": "Add the garlic and onion and sauté for 3-4 minutes, until the onion is translucent.",
    "complete": false
  }, {
    "id": 3,
-   "step": "Add extra floor droppings for texture and flavor",
+   "step": "Add the chopped kimchi, gochugaru, gochujang, and soy sauce to the pot and stir well.",
    "complete": false
  }, {
    "id": 4,
-   "step": "Gingerly spread cat feces to make the lovely crap-custard crust that everyone adores",
+   "step": "Add the water and bring the mixture to a boil.",
    "complete": false
  }, {
    "id": 5,
-   "step": "Change light bulbs",
+   "step": "Reduce the heat to low and simmer for 10-15 minutes, until the kimchi is softened.",
    "complete": false
  }, {
    "id": 6,
-   "step": "Go to Store",
+   "step": "Add the cubed tofu and sliced shiitake mushrooms to the pot and simmer for another 5-10 minutes, until the tofu is heated through and the mushrooms are tender.",
    "complete": false
  }, {
    "id": 7,
-   "step": "Fill gas tank",
-   "complete": false
- }, {
-   "id": 8,
-   "step": "Add your favorite custard and give it a nice solid swirl. Serve to friends, family, loved ones or enemies.",
+   "step": "Serve hot, garnished with chopped green onions.",
    "complete": false
  }]
 

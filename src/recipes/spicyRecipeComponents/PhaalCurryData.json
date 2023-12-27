@@ -1,34 +1,26 @@
 [{
    "id": 1,
-   "step": "Mix the crap you took in a bowl for five minutes",
+   "step": "1. Heat oil in a pan. Add onions, garlic, and ginger. Sauté until fragrant.",
    "complete": false
  }, {
    "id": 2,
-   "step": "Put in oven to get a fresh poop-filled aroma",
+   "step": "2. Add tomatoes and cook until they soften.",
    "complete": false
  }, {
    "id": 3,
-   "step": "Add extra floor droppings for texture and flavor",
+   "step": "3. Stir in curry powder, turmeric, cumin, and coriander. Cook for a few minutes.",
    "complete": false
  }, {
    "id": 4,
-   "step": "Gingerly spread cat feces to make the lovely crap-custard crust that everyone adores",
+   "step": "4. Pour in coconut milk, stirring well.",
    "complete": false
  }, {
    "id": 5,
-   "step": "Change light bulbs",
+   "step": "5. Add your choice of protein or vegetables. Simmer until cooked through.",
    "complete": false
  }, {
    "id": 6,
-   "step": "Go to Store",
-   "complete": false
- }, {
-   "id": 7,
-   "step": "Fill gas tank",
-   "complete": false
- }, {
-   "id": 8,
-   "step": "Add your favorite custard and give it a nice solid swirl. Serve to friends, family, loved ones or enemies.",
+   "step": "6. Season with salt and pepper. Serve with rice or naan.",
    "complete": false
  }]
 
