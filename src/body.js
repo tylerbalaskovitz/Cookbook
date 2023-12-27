@@ -10,7 +10,7 @@ function Body(){
 	//Having the state set before the return statement but still withhin the function body
   const [goodRecipeState, setGoodRecipeState] = useState(false);
   const [badRecipeState, setBadRecipeState] = useState(false);
-
+  const [spicyRecipeState, setSpicyRecipeState] = useState(false);
   function handleGoodRecipeClick(){
 	if (goodRecipeState === false){
 		setGoodRecipeState(true)
@@ -52,7 +52,7 @@ function Body(){
 	</div>
         </p>
 	<div>
-		<ImportedButton />
+		<ImportedButton onClick={spicyRecipeRender} />
 	</div>
 	<div>
 		{ goodRecipeState ? <GoodRecipes /> : null} 

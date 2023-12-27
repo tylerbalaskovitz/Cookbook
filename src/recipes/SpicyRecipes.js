@@ -1,38 +1,41 @@
 import './GoodRecipes.css';
 //components being put here
-import CrapfilledCreamSoup from './badRecipeComponents/CrapfilledCreamSoup.js';
-import DiarheaDejour from './badRecipeComponents/DiarheaDeJour.js';
-import ShitSandwich from './badRecipeComponents/shitSandwich.js';
-import CrapAndCustard from './badRecipeComponents/CrapAndCustard.js';
 import React, {useState} from 'react';
-import CrapAndCustardList from './badRecipeComponents/CrapAndCustardData.json'
-import DiarheaDeJourList from './badRecipeComponents/DiarheaDeJourData.json'
-import ShitSandwichList from './badRecipeComponents/ShitSandwichData.json'
-import CrapFilledCreamSoupList from './badRecipeComponents/CrapFilledCreamSoupData.json'
+
+
+import KimchiJjigae from './spicyRecipeComponents/KimchiJjigae.js'
+import HuoGuo from './spicyRecipeComponents/HuoGuo.js'
+import SikSikWata from './spicyRecipeComponents/SikSikWat.js'
+import PhaalCurry from './spicyRecipeComponents/PhaalCurry.js'
+
+import KimchiJjigaeList from './spicyRecipeComponents/KimchiJjigaeData.json'
+import HuoGuoList from './spicyRecipeComponents/HuoGuoData.json'
+import SikSikWatList from './spicyRecipeComponents/SikSikWatData.json'
+import PhaalCurryList from './spicyRecipeComponents/PhaalCurryData.json'
 
 function SpicyRecipes() {
 //here there will need to be four different use states, one for each of the recipes
 // that are being passed in.
-const [crapAndCustardList, setCrapAndCustardList] = useState(CrapAndCustardList)
-const [diarheaDeJourList, setDiarheaDeJourList] = useState(DiarheaDeJourList)
-const [shitSandwichList, setShitSandwichList] = useState(ShitSandwichList)
-const [crapFilledCreamSoupList, setCrapFilledCreamSoupList] = useState(CrapFilledCreamSoupList)
+const [kimchiJjigaeList, setKimchiJjigaeList] = useState(KimchiJjigaeList)
+const [huoGuoList, setHuoGuoList] = useState(HuoGuoList)
+const [sikSikWatList, setSikSikWatList] = useState(SikSikWatList)
+const [phaalCurryList, setPhaalCurryList] = useState(PhaalCurryList)
 
   return (
     <div className="GoodRecipes">
       <div className="GoodRecipes-header">
       These are the spiciest recipes that we could find. Enjoy as your face melts 
 	<div>
-		Kimchi Jjigae	
+		<KimchiJjigae kimchiJjigaeList={kimchiJjigaeList} /> 	
 	</div>
 	<div>
-		Huo Guo	
+		<HuoGuo	huoGuoList = {huoGuoList} />
 	</div>
 	<div>
-		Sik Sik Wat	
+		<SikSikWat sikSikWatList = {sikSikWatList} />
 	</div>
 	<div>
-		Phaal Curry
+		<PhaalCurry phaalCurryList = {phaalCurryList} />
 	</div>
 	</div>
     </div>
