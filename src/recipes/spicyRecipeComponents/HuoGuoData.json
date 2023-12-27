@@ -1,34 +1,26 @@
 [{
    "id": 1,
-   "step": "Mix the crap you took in a bowl for five minutes",
+   "step": "To make the soup base, add the vegetable broth, garlic, ginger, soy sauce, rice vinegar, sesame oil, Sichuan peppercorns, and salt to a large pot. Bring to a boil, then reduce heat and simmer for 10-15 minutes to allow the flavors to meld together.",
    "complete": false
  }, {
    "id": 2,
-   "step": "Put in oven to get a fresh poop-filled aroma",
+   "step": "While the soup base is simmering, prepare the hot pot ingredients. Cut the vegetables into bite-sized pieces, slice the tofu, and cook the noodles according to package instructions. Prepare the dipping sauces in small bowls and set aside.",
    "complete": false
  }, {
    "id": 3,
-   "step": "Add extra floor droppings for texture and flavor",
+   "step": "Once the soup base is ready, transfer it to a hot pot set or a large pot with a burner. Place it in the center of the dining table and turn the heat to medium.",
    "complete": false
  }, {
    "id": 4,
-   "step": "Gingerly spread cat feces to make the lovely crap-custard crust that everyone adores",
+   "step": "Allow the soup base to come to a simmer, then start adding the hot pot ingredients to the pot. Cook the vegetables and tofu for a few minutes until they are tender, then remove them with a slotted spoon and dip them in the sauces.",
    "complete": false
  }, {
    "id": 5,
-   "step": "Change light bulbs",
+   "step": "Continue adding more ingredients to the pot as desired, and adjust the heat as necessary to maintain a simmer.",
    "complete": false
  }, {
    "id": 6,
-   "step": "Go to Store",
-   "complete": false
- }, {
-   "id": 7,
-   "step": "Fill gas tank",
-   "complete": false
- }, {
-   "id": 8,
-   "step": "Add your favorite custard and give it a nice solid swirl. Serve to friends, family, loved ones or enemies.",
+   "step": "Once all of the ingredients have been cooked and enjoyed, turn off the heat and discard any remaining soup. Clean the pot and store it for future use.",
    "complete": false
  }]
 
