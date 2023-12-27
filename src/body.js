@@ -62,10 +62,10 @@ function Body(){
         <p>
          Tyler's super secret cookbook. We have all sorts of recipes for you to check out! 
 	<div>
-		<button className="Home-Button" onClick={showHomeOnly} > View Home </button>
-		<button className="Good-Recipe-Button" onClick={goodRecipeRender}>  View the Good stuff </button>
-		<button className="Bad-Recipe-Button" onClick={handleBadRecipeClick}> View the shitty stuff </button>
-		<button className="Spicy-Recipe=Button"  onClick={handleSpicyClick}>View the Spicy Stuff </button>
+		<button className="NavigationButton" onClick={showHomeOnly} > View Home </button>
+		<button className="NavigationButton" onClick={goodRecipeRender}>  View the Good stuff </button>
+		<button className= "NavigationButton"  onClick={handleBadRecipeClick}> View the shitty stuff </button>
+		<button className= "NavigationButton" onClick={handleSpicyClick}>View the Spicy Stuff </button>
 	</div>
         </p>
 	<div>

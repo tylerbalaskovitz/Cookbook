@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+.NavigationButton{
+background-color: gray; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+ border-radius:4px;
+}
+
+.NavigationButton:hover{
+background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ border-radius:4px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
