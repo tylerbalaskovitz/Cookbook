@@ -4,7 +4,7 @@ import CrapAndCustardImage from '../../images/crapandcustard.jpg'
 import TaskMapper from '../../taskMapper.js'
 import CrapAndCustardList from './CrapAndCustardData.json'
 
-function CrapAndCustard ({crapAndCustardList}) {
+function KimchiJjigae ({kimchiJjigaeList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
 
 function renderRecipeButton() {
@@ -46,4 +46,4 @@ function renderRecipeButton() {
   );
 }
 
-export default CrapAndCustard;
+export default KimchiJjigae;
