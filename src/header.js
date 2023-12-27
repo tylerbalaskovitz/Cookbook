@@ -9,7 +9,11 @@ function Header() {
   return (
 	<div>
 	<p>
-		Navbar goes here
+		
+		<button className="NavigationButton" > View Home </button>
+		<button className="NavigationButton" >  View the Good stuff </button>
+		<button className= "NavigationButton" > View the shitty stuff </button>
+		<button className= "NavigationButton" >View the Spicy Stuff </button>
 	</p>
 	</div>
   );
