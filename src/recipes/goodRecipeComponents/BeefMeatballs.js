@@ -1,10 +1,10 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
-import CrapAndCustardImage from '../../images/crapandcustard.jpg'
+import RecipeImage from '../../images/crapandcustard.jpg'
 import TaskMapper from '../../taskMapper.js'
-import CrapAndCustardList from './CrapAndCustardData.json'
+import BeefMeatballsList from './BeefMeatballsData.json'
 
-function CrapAndCustard ({crapAndCustardList}) {
+function BeefMeatballs ({beefMeatballsList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
 
 function renderRecipeButton() {
@@ -18,7 +18,7 @@ function renderRecipeButton() {
   return (
 	<div>
   	<header>
-	Crap And Custard
+	Beef Meatballs	
 	{!renderRecipe && 
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			See Recipe
@@ -28,14 +28,14 @@ function renderRecipeButton() {
 	{renderRecipe && 
 	    <div>
 	    <div className="CookingSteps">
-		Crap and Custard is an old time classic that is shared with the friends and family through generations of poverty, despair, and comedy. So, have a laugh and share with your unwitting friends, inlaws and strangers
+		Insert description of beef meatball	
 		</div>
 		<div className="PictureOfRecipe">
-		<img src={CrapAndCustardImage} className="FoodImage" alt="food" />
+		<img src={RecipeImage} className="FoodImage" alt="food" />
 		</div>
 		<li>
-		  {crapAndCustardList.map(CrapAndCustardList => {
-			return (<TaskMapper taskMapper={CrapAndCustardList}/>)})} 
+		  {beefMeatballsList.map(BeefMeatballsList => {
+			return (<TaskMapper taskMapper={BeefMeatballsList}/>)})} 
 		</li>
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			{renderRecipe ? "Hide Recipe" : "See Recipe"}
@@ -46,4 +46,4 @@ function renderRecipeButton() {
   );
 }
 
-export default CrapAndCustard;
+export default BeefMeatballs;

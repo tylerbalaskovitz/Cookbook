@@ -1,10 +1,10 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
-import CrapAndCustardImage from '../../images/crapandcustard.jpg'
+import SugarCookiesImage from '../../images/sugarcookie.jpg'
 import TaskMapper from '../../taskMapper.js'
-import CrapAndCustardList from './CrapAndCustardData.json'
+import SugarCookieList from './SugarCookiesData.json'
 
-function CrapAndCustard ({crapAndCustardList}) {
+function SugarCookies ({sugarCookiesList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
 
 function renderRecipeButton() {
@@ -18,7 +18,7 @@ function renderRecipeButton() {
   return (
 	<div>
   	<header>
-	Crap And Custard
+	Sugar Cookies	
 	{!renderRecipe && 
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			See Recipe
@@ -28,14 +28,14 @@ function renderRecipeButton() {
 	{renderRecipe && 
 	    <div>
 	    <div className="CookingSteps">
-		Crap and Custard is an old time classic that is shared with the friends and family through generations of poverty, despair, and comedy. So, have a laugh and share with your unwitting friends, inlaws and strangers
+		Insert Sugar Cookies Description	
 		</div>
 		<div className="PictureOfRecipe">
-		<img src={CrapAndCustardImage} className="FoodImage" alt="food" />
+		<img src={SugarCookiesImage} className="FoodImage" alt="food" />
 		</div>
 		<li>
-		  {crapAndCustardList.map(CrapAndCustardList => {
-			return (<TaskMapper taskMapper={CrapAndCustardList}/>)})} 
+		  {sugarCookiesList.map(SugarCookieList => {
+			return (<TaskMapper taskMapper={SugarCookieList}/>)})} 
 		</li>
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			{renderRecipe ? "Hide Recipe" : "See Recipe"}
@@ -46,4 +46,4 @@ function renderRecipeButton() {
   );
 }
 
-export default CrapAndCustard;
+export default SugarCookies;
