@@ -1,34 +1,42 @@
 [{
    "id": 1,
-   "step": "Mix the crap you took in a bowl for five minutes",
+   "step": "Preheat the Oven: Preheat your oven to 350°F (175°C).",
    "complete": false
  }, {
    "id": 2,
-   "step": "Put in oven to get a fresh poop-filled aroma",
+   "step": "Cream Butter and Sugar: In a large bowl, cream together the softened butter and granulated sugar until light and fluffy. This can be done with an electric mixer or by hand with a wooden spoon.",
    "complete": false
  }, {
    "id": 3,
-   "step": "Add extra floor droppings for texture and flavor",
+   "step": "Add Egg and Vanilla: Beat in the egg until well combined. Add the vanilla extract and mix again.",
    "complete": false
  }, {
    "id": 4,
-   "step": "Gingerly spread cat feces to make the lovely crap-custard crust that everyone adores",
+   "step": "Combine Dry Ingredients: In a separate bowl, whisk together the flour, baking powder, and salt.",
    "complete": false
  }, {
    "id": 5,
-   "step": "Change light bulbs",
+   "step": "Combine Wet and Dry Ingredients: Gradually add the dry ingredients to the wet ingredients, mixing well after each addition. The dough should come together and be soft but not sticky.",
    "complete": false
  }, {
    "id": 6,
-   "step": "Go to Store",
+   "step": "Chill the Dough: Divide the dough in half, shape each half into a disk, wrap them in plastic wrap, and refrigerate for at least 1 hour. Chilling the dough helps it firm up and makes it easier to handle.",
    "complete": false
  }, {
    "id": 7,
-   "step": "Fill gas tank",
+   "step": "Roll and Cut: Preheat the oven again if needed. On a floured surface, roll out one disk of dough to about 1/4 inch thickness. Use cookie cutters to cut out desired shapes.",
    "complete": false
  }, {
    "id": 8,
-   "step": "Add your favorite custard and give it a nice solid swirl. Serve to friends, family, loved ones or enemies.",
+   "step": "Bake: Place the cut-out cookies on ungreased baking sheets. Bake in the preheated oven for 8 to 10 minutes or until the edges are lightly golden. Keep an eye on them to avoid over-baking.",
+   "complete": false
+ },{
+   "id": 9,
+   "step": "Cool: Allow the cookies to cool on the baking sheets for a few minutes before transferring them to a wire rack to cool completely",
+   "complete": false
+ },{
+   "id": 10,
+   "step": "Decorate (Optional): Once the cookies are completely cool, you can decorate them with icing, sprinkles, or colored sugar if desired.",
    "complete": false
  }]
 
