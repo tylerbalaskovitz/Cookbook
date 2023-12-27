@@ -1,10 +1,10 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
-import CrapAndCustardImage from '../../images/crapandcustard.jpg'
+import HuoGuoImage from '../../images/huoguo.jpg'
 import TaskMapper from '../../taskMapper.js'
-import CrapAndCustardList from './CrapAndCustardData.json'
+import HuoGuoList from './HuoGuoData.json'
 
-function HuoGuo ({crapAndCustardList}) {
+function HuoGuo ({huoGuoList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
 
 function renderRecipeButton() {
@@ -28,14 +28,14 @@ function renderRecipeButton() {
 	{renderRecipe && 
 	    <div>
 	    <div className="CookingSteps">
-		Crap and Custard is an old time classic that is shared with the friends and family through generations of poverty, despair, and comedy. So, have a laugh and share with your unwitting friends, inlaws and strangers
+		Insert history of Huo Guo here
 		</div>
 		<div className="PictureOfRecipe">
-		<img src={CrapAndCustardImage} className="FoodImage" alt="food" />
+		<img src={HuoGuoImage} className="FoodImage" alt="food" />
 		</div>
 		<li>
-		  {crapAndCustardList.map(CrapAndCustardList => {
-			return (<TaskMapper taskMapper={CrapAndCustardList}/>)})} 
+		  {huoGuoList.map(HuoGuoList => {
+			return (<TaskMapper taskMapper={HuoGuoList}/>)})} 
 		</li>
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			{renderRecipe ? "Hide Recipe" : "See Recipe"}

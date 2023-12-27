@@ -1,8 +1,8 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
-import CrapAndCustardImage from '../../images/crapandcustard.jpg'
+import KimchiJjigaeImage from '../../images/crapandcustard.jpg'
 import TaskMapper from '../../taskMapper.js'
-import CrapAndCustardList from './CrapAndCustardData.json'
+import KimchiJjigaeList from './KimchiJjigaeData.json'
 
 function KimchiJjigae ({kimchiJjigaeList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
@@ -28,14 +28,14 @@ function renderRecipeButton() {
 	{renderRecipe && 
 	    <div>
 	    <div className="CookingSteps">
-		Crap and Custard is an old time classic that is shared with the friends and family through generations of poverty, despair, and comedy. So, have a laugh and share with your unwitting friends, inlaws and strangers
+		Insert kimchi jjigae recipe description here
 		</div>
 		<div className="PictureOfRecipe">
-		<img src={CrapAndCustardImage} className="FoodImage" alt="food" />
+		<img src={KimchiJjigaeImage} className="FoodImage" alt="food" />
 		</div>
 		<li>
-		  {crapAndCustardList.map(CrapAndCustardList => {
-			return (<TaskMapper taskMapper={CrapAndCustardList}/>)})} 
+		  {kimchiJjigaeList.map(KimchiJjigaeList => {
+			return (<TaskMapper taskMapper={KimchiJjigaeList}/>)})} 
 		</li>
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			{renderRecipe ? "Hide Recipe" : "See Recipe"}

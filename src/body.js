@@ -2,6 +2,7 @@ import logo from './Cookbook.gif';
 import './App.css';
 import GoodRecipes from './recipes/GoodRecipes.js';
 import BadRecipes from './recipes/BadRecipes.js';
+import SpicyRecipes from './recipes/SpicyRecipes.js';
 import ImportedButton from './buttons/buttons.js';
 import React, {useState} from 'react';
 
@@ -21,6 +22,15 @@ function Body(){
 	}
   }	
 
+  function handleSpicyClick(){
+	if (spicyRecipeState === false){
+		setSpicyRecipeState(true)
+		console.log("handle spicy Recipe is clicked")
+	} else {
+		setSpicyRecipeState(false)
+		console.log("handle spicy Recipe is clicked again")
+	}
+  }	
   function handleBadRecipeClick(){
 	if (badRecipeState === false){
 		setBadRecipeState(true)
@@ -52,11 +62,12 @@ function Body(){
 	</div>
         </p>
 	<div>
-		<ImportedButton onClick={spicyRecipeRender} />
+		<ImportedButton onClick={handleSpicyClick} />
 	</div>
 	<div>
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
+		{ spicyRecipeState ? < SpicyRecipes/> : null} 
 	</div>
 	</header>
 	    </div>

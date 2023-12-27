@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 
 import KimchiJjigae from './spicyRecipeComponents/KimchiJjigae.js'
 import HuoGuo from './spicyRecipeComponents/HuoGuo.js'
-import SikSikWata from './spicyRecipeComponents/SikSikWat.js'
+import SikSikWat from './spicyRecipeComponents/SikSikWat.js'
 import PhaalCurry from './spicyRecipeComponents/PhaalCurry.js'
 
 import KimchiJjigaeList from './spicyRecipeComponents/KimchiJjigaeData.json'
