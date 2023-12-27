@@ -13,6 +13,10 @@
   }
 }
 
+.FoodImage {
+width: 40%;
+height: 40%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
