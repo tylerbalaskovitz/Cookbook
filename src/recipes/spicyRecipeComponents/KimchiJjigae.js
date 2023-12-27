@@ -1,6 +1,6 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
-import KimchiJjigaeImage from '../../images/crapandcustard.jpg'
+import KimchiJjigaeImage from '../../images/kimchijjigae.jpg'
 import TaskMapper from '../../taskMapper.js'
 import KimchiJjigaeList from './KimchiJjigaeData.json'
 
@@ -18,7 +18,7 @@ function renderRecipeButton() {
   return (
 	<div>
   	<header>
-	Crap And Custard
+	Kimchi Jjigae	
 	{!renderRecipe && 
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			See Recipe

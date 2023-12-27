@@ -59,10 +59,11 @@ function Body(){
 	<div>
 		<button className="Good-Recipe-Button" onClick={goodRecipeRender}>  View the Good stuff </button>
 		<button className="Bad-Recipe-Button" onClick={handleBadRecipeClick}> View the shitty stuff </button>
+		<button className="Spicy-Recipe=Button"  onClick={handleSpicyClick}>View the Spicy Stuff </button>
 	</div>
         </p>
 	<div>
-		<ImportedButton onClick={handleSpicyClick} />
+		
 	</div>
 	<div>
 		{ goodRecipeState ? <GoodRecipes /> : null} 

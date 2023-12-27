@@ -18,7 +18,7 @@ function renderRecipeButton() {
   return (
 	<div>
   	<header>
-	Crap And Custard
+	Phaal Curry	
 	{!renderRecipe && 
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			See Recipe
