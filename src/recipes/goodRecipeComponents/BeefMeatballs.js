@@ -53,7 +53,7 @@ toasted sesame seeds for garnish"
 		<div className="PictureOfRecipe">
 		<img src={RecipeImage} className="FoodImage" alt="food" />
 		</div>
-		<li>
+		<li className="CookingSteps">
 		  {beefMeatballsList.map(BeefMeatballsList => {
 			return (<TaskMapper taskMapper={BeefMeatballsList}/>)})} 
 		</li>

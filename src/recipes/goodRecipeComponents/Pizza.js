@@ -33,7 +33,7 @@ function renderRecipeButton() {
 		<div className="PictureOfRecipe">
 		<img src={PizzaImage} className="FoodImage" alt="food" />
 		</div>
-		<li>
+		<li className="CookingSteps">
 		  {pizzaList.map(PizzaList => {
 			return (<TaskMapper taskMapper={PizzaList}/>)})} 
 		</li>

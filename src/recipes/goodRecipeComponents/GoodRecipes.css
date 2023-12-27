@@ -4,6 +4,8 @@
 
 .CookingSteps {
 font-size: large;
+width: 50%;
+margin: 0 auto;
 }
 
 .App-logo {
