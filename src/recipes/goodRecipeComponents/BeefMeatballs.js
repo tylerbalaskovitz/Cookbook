@@ -1,6 +1,6 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
-import RecipeImage from '../../images/crapandcustard.jpg'
+import RecipeImage from '../../images/beefmeatballs.jpg'
 import TaskMapper from '../../taskMapper.js'
 import BeefMeatballsList from './BeefMeatballsData.json'
 

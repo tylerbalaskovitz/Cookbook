@@ -2,6 +2,16 @@ import {Link} from 'react-router-dom';
 import './GoodRecipes.css';
 import React, {useState} from 'react';
 
+import BeefMeatballs from './goodRecipeComponents/BeefMeatballs.js';
+import Jiaozi from './goodRecipeComponents/Jiaozi.js';
+import Pizza from './goodRecipeComponents/Pizza.js';
+import SugarCookies from './goodRecipeComponents/SugarCookies.js';
+
+import BeefMeatballsList from './goodRecipeComponents/BeefMeatballsData.json'
+import JiaoziList from './goodRecipeComponents/JiaoziData.json'
+import PizzaList from './goodRecipeComponents/PizzaData.json'
+import SugarCookieList from './goodRecipeComponents/SugarCookiesData.json'
+
 function GoodRecipes() {
   return (
     <div className="GoodRecipes">
@@ -11,16 +21,16 @@ function GoodRecipes() {
        Welcome to the recipes section where things get awfully delicious 
         </p>
 	<div>
-	Sugar Cookies
+	<SugarCookies sugarCookiesList={SugarCookieList} />
 	</div>
 	<div>
-	Jiaozi	
+	<Jiaozi jiaoziList = {JiaoziList} />	
 	</div>
 	<div>
-	Beef Meatballs	
+	<BeefMeatballs beefMeatballsList = {BeefMeatballsList} />	
 	</div>
 	<div>	
-	Pizza
+	<Pizza pizzaList = {PizzaList} />	
 	</div>
 	</header>
     </div>

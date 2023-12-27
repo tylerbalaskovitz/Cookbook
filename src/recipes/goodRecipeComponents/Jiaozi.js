@@ -1,10 +1,10 @@
 import './GoodRecipes.css';
 import React, {useState} from 'react';
-import CrapAndCustardImage from '../../images/crapandcustard.jpg'
+import JiaoziImage from '../../images/jiaozi.jpg'
 import TaskMapper from '../../taskMapper.js'
-import CrapAndCustardList from './CrapAndCustardData.json'
+import JiaoziList from './JiaoziData.json'
 
-function CrapAndCustard ({crapAndCustardList}) {
+function Jiaozi ({jiaoziList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
 
 function renderRecipeButton() {
@@ -31,11 +31,11 @@ function renderRecipeButton() {
 		Insert description of Jiaozi	
 		</div>
 		<div className="PictureOfRecipe">
-		<img src={CrapAndCustardImage} className="FoodImage" alt="food" />
+		<img src={JiaoziImage} className="FoodImage" alt="food" />
 		</div>
 		<li>
-		  {crapAndCustardList.map(CrapAndCustardList => {
-			return (<TaskMapper taskMapper={CrapAndCustardList}/>)})} 
+		  {jiaoziList.map(JiaoziList => {
+			return (<TaskMapper taskMapper={JiaoziList}/>)})} 
 		</li>
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			{renderRecipe ? "Hide Recipe" : "See Recipe"}
@@ -46,4 +46,4 @@ function renderRecipeButton() {
   );
 }
 
-export default CrapAndCustard;
+export default Jiaozi;
