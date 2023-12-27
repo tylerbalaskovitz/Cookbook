@@ -28,6 +28,7 @@ function renderRecipeButton() {
 	{renderRecipe && 
 	    <div>
 	    <div className="CookingSteps">
+	    <li>
 	    "1 pound ground beef
 
 2 teaspoons gochujang (Korean hot pepper paste)
@@ -47,6 +48,7 @@ function renderRecipeButton() {
 ½ cup finely crushed buttery round crackers (such as Ritz®)
 
 toasted sesame seeds for garnish"
+	</li>
 		</div>
 		<div className="PictureOfRecipe">
 		<img src={RecipeImage} className="FoodImage" alt="food" />
