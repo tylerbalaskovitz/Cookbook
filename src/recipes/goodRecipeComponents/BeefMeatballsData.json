@@ -1,10 +1,10 @@
 [{
    "id": 1,
-   "step": "Mix the crap you took in a bowl for five minutes",
+   "step": "Add ground beef to a bowl and spread gochujang evenly over the surface of the meat. Season evenly with kosher salt, pepper, and soy sauce. Spreading out the seasoning will reduce the time you need to handle the meat. Spread fresh ginger and garlic evenly over the surface. Add green onions and cracker crumbs. Mix in quickly with a fork until well combined.",
    "complete": false
  }, {
    "id": 2,
-   "step": "Put in oven to get a fresh poop-filled aroma",
+   "step": "Cover and refrigerate for about 30 minutes.", 
    "complete": false
  }, {
    "id": 3,
@@ -12,23 +12,27 @@
    "complete": false
  }, {
    "id": 4,
-   "step": "Gingerly spread cat feces to make the lovely crap-custard crust that everyone adores",
+   "step": " Preheat the oven to 450 degrees C (220 degrees C).", 
    "complete": false
  }, {
    "id": 5,
-   "step": "Change light bulbs",
+   "step": " Form mixture into 12 equal-sized balls using wet hands. Add to a cast iron skillet.", 
    "complete": false
  }, {
    "id": 6,
-   "step": "Go to Store",
+   "step": " Bake meatballs in the preheated oven until nicely browned, about 20 minutes.", 
    "complete": false
  }, {
    "id": 7,
-   "step": "Fill gas tank",
+   "step": " Drain most of the grease but 1 teaspoon out of the skillet and set onto stove over medium-high heat. Add garlic and stir until fragrant, about 1 minute. Deglaze skillet with rice vinegar and soy sauce. Stir in brown sugar, beef broth, and gochujang. Season with sesame oil and Sriracha. Stir sauce and bring to a simmer. Cook until reduced by a third.", 
    "complete": false
  }, {
    "id": 8,
-   "step": "Add your favorite custard and give it a nice solid swirl. Serve to friends, family, loved ones or enemies.",
+   "step": " Meanwhile stir together cornstarch and water in a small bowl to create a slurry. Reduce heat to medium-low and mix in slurry while whisking constantly. Keep simmering sauce until it has reduced to about half. Add meatballs back into the skillet and baste with the sauce. Allow to simmer, basting generously, until meatballs are heated through and are well soaked with sauce, 3 to 5 minutes.", 
+   "complete": false
+ },{
+   "id": 9,
+   "step": " Serve garnished with toasted sesame seeds and green onions.", 
    "complete": false
  }]
 

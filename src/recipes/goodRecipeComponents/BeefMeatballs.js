@@ -28,7 +28,25 @@ function renderRecipeButton() {
 	{renderRecipe && 
 	    <div>
 	    <div className="CookingSteps">
-		Insert description of beef meatball	
+	    "1 pound ground beef
+
+2 teaspoons gochujang (Korean hot pepper paste)
+
+1 teaspoon kosher salt
+
+1 teaspoon freshly ground black pepper
+
+1 tablespoon soy sauce
+
+2 teaspoons grated fresh ginger (heated to 150 F degrees (65 degrees C) to deactivate enzymes, or soaked in 1 tablespoon vinegar for 5 minutes)
+
+4 cloves garlic, finely minced
+
+⅓ cup thinly sliced green onions, plus more for garnish
+
+½ cup finely crushed buttery round crackers (such as Ritz®)
+
+toasted sesame seeds for garnish"
 		</div>
 		<div className="PictureOfRecipe">
 		<img src={RecipeImage} className="FoodImage" alt="food" />
