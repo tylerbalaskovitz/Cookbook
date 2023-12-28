@@ -24,7 +24,7 @@ function Header() {
 		<button className= "NavigationButton" onClick={spicyRecipes}>View the Spicy Stuff </button>
 	</p>
 	</div>
-useContext is not defined  );
+  );
 }
 
 export default Header;
