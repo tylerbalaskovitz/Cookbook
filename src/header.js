@@ -9,22 +9,22 @@ import {NavbarContext} from './NavbarContext.js';
 
 function Header() {
 	const {recipes, setRecipes} = useContext(NavbarContext);
-	function goHome (){ setRecipes("home")};
-	function goodRecipes () {setRecipes("good")};
-	function badRecipes () {setRecipes("bad")};
-	function spicyRecipes () {setRecipes("spicy")};
+	function goHome (){{ setRecipes("home")}};
+	function goodRecipes () {{setRecipes("good")}};
+	function badRecipes () {{setRecipes("bad")}};
+	function spicyRecipes () {{setRecipes("spicy")}};
 	
   return (
 	<div>
 	<p>
 		
-		<button className="NavigationButton" > View Home </button>
-		<button className="NavigationButton" >  View the Good stuff </button>
-		<button className= "NavigationButton" > View the shitty stuff </button>
-		<button className= "NavigationButton" >View the Spicy Stuff </button>
+		<button className="NavigationButton" onClick={goHome}> View Home </button>
+		<button className="NavigationButton" onClick={goodRecipes}>  View the Good stuff </button>
+		<button className= "NavigationButton" onClick={badRecipes}> View the shitty stuff </button>
+		<button className= "NavigationButton" onClick={spicyRecipes}>View the Spicy Stuff </button>
 	</p>
 	</div>
-  );
+useContext is not defined  );
 }
 
 export default Header;
