@@ -7,7 +7,7 @@ import ImportedButton from './buttons/buttons.js';
 import Header from './header.js';
 import Body from './body.js';
 import Footer from './footer.js';
-import {NavbarContext} from './NavbarContext.js'
+import {NavbarContext} from './NavbarContext.js';
 //Uncomment out when finishing the other components food, and what not.
 export const RecipeContext = createContext("");
 
