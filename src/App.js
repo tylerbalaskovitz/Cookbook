@@ -7,7 +7,7 @@ import ImportedButton from './buttons/buttons.js';
 import Header from './header.js';
 import Body from './body.js';
 import Footer from './footer.js';
-/*Uncomment out when finishing the other components food, and what not.
+//Uncomment out when finishing the other components food, and what not.
 export const RecipeContext = createContext();
 
 const RecipeContextProvider = ({children}) => {
@@ -18,14 +18,16 @@ return (<RecipeContext.Provider value = {{recipes, setRecipes}}>
 	<Recipecontext.Provicer />
 	);
 };
-*/
+
 //Used to render the three main components of the application
 function App() {
   return (
     <div className="App">
+	<RecipeContextProvider>
 	<Header />
 	<Body />
 	<Footer />
+	<RecipeContextProvider/>
     </div>
   );
 }
