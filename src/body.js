@@ -13,7 +13,7 @@ function Body(){
   const [goodRecipeState, setGoodRecipeState] = useState(false);
   const [badRecipeState, setBadRecipeState] = useState(false);
   const [spicyRecipeState, setSpicyRecipeState] = useState(false);
-  const {recipes, setRecipes} = useContext(NavbarContext);
+  const {recipes} = useContext(NavbarContext);
 
   function handleGoodRecipeClick(){
 	if (goodRecipeState === false){
@@ -62,13 +62,14 @@ function clearBody(){
 	setSpicyRecipeState(false);
 }
 
-function navbarUpdate(recipes){
-	clearBody();
+function navbarUpdate(){
+	//debugger;
 	switch (recipes) {
-		case "home": break;
-		case "good": setGoodRecipeState(true); break;
-		case "bad": setBadRecipeState(true); break;
-		case "spicy": setSpicyRecipeState(true); break;
+		case "home": clearBody(); showHomeOnly(); console.log("Got here"); break;
+		case "good": clearBody(); setGoodRecipeState(true); break;
+		case "bad": clearBody(); setBadRecipeState(true); break;
+		case "spicy": clearBody(); setSpicyRecipeState(true); break;
+		default: console.log("this is recipes" + {recipes}.toString); setSpicyRecipeState(true);
 	}
  }
     useEffect(() => {navbarUpdate({recipes}); });
