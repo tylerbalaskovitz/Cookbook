@@ -4,7 +4,8 @@ import GoodRecipes from './recipes/GoodRecipes.js';
 import BadRecipes from './recipes/BadRecipes.js';
 import SpicyRecipes from './recipes/SpicyRecipes.js';
 import ImportedButton from './buttons/buttons.js';
-import React, {useState} from 'react';
+import React,{ useState} from 'react';
+import {useContext} from 'react';
 import {NavbarContext} from './NavbarContext.js';
 
 function Body(){
@@ -12,6 +13,8 @@ function Body(){
   const [goodRecipeState, setGoodRecipeState] = useState(false);
   const [badRecipeState, setBadRecipeState] = useState(false);
   const [spicyRecipeState, setSpicyRecipeState] = useState(false);
+  const {recipes, setRecipes} = useContext(NavbarContext);
+
   function handleGoodRecipeClick(){
 	if (goodRecipeState === false){
 		setGoodRecipeState(true)
@@ -61,7 +64,7 @@ function clearBody(){
 
 function navbarUpdate(){
 	{clearBody()}
-	switch ({NavbarContext}) {
+	switch ({recipes}) {
 		case "home": break;
 		case "good": setGoodRecipeState(true); break;
 		case "bad": setBadRecipeState(true); break;
@@ -89,7 +92,7 @@ function navbarUpdate(){
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 		{ spicyRecipeState ? < SpicyRecipes/> : null} 
-		Navbar Context {NavbarContext.recipes}
+		Navbar Context {recipes}{navbarUpdate}
 	</div>
 	</header>
 	    </div>
