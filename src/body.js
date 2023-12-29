@@ -4,7 +4,7 @@ import GoodRecipes from './recipes/GoodRecipes.js';
 import BadRecipes from './recipes/BadRecipes.js';
 import SpicyRecipes from './recipes/SpicyRecipes.js';
 import ImportedButton from './buttons/buttons.js';
-import React,{ useState} from 'react';
+import React,{ useState, useEffect} from 'react';
 import {useContext} from 'react';
 import {NavbarContext} from './NavbarContext.js';
 
@@ -71,6 +71,7 @@ function navbarUpdate(){
 		case "spicy": setSpicyRecipeState(true); break;
 	}
  }
+    useEffect(() => {{navbarUpdate}  });
   return (
     <div className="App">
       <header className="App-header">
@@ -92,7 +93,7 @@ function navbarUpdate(){
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 		{ spicyRecipeState ? < SpicyRecipes/> : null} 
-		Navbar Context {recipes}{navbarUpdate}
+		Navbar Context {recipes}
 	</div>
 	</header>
 	    </div>
