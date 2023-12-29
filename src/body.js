@@ -10,52 +10,13 @@ import {NavbarContext} from './NavbarContext.js';
 
 function Body(){
 	//Having the state set before the return statement but still withhin the function body
+  const [homeRecipeState, setHomeRecipeState] = useState(false);
   const [goodRecipeState, setGoodRecipeState] = useState(false);
   const [badRecipeState, setBadRecipeState] = useState(false);
   const [spicyRecipeState, setSpicyRecipeState] = useState(false);
   const {recipes} = useContext(NavbarContext);
 
-  function handleGoodRecipeClick(){
-	if (goodRecipeState === false){
-		setGoodRecipeState(true)
-		console.log("handle Good Recipe is clicked")
-	} else {
-		setGoodRecipeState(false)
-		console.log("handle Good Recipe is clicked again")
-	}
-  }	
 
-  function handleSpicyClick(){
-	if (spicyRecipeState === false){
-		setSpicyRecipeState(true)
-		console.log("handle spicy Recipe is clicked")
-	} else {
-		setSpicyRecipeState(false)
-		console.log("handle spicy Recipe is clicked again")
-	}
-  }	
-  function handleBadRecipeClick(){
-	if (badRecipeState === false){
-		setBadRecipeState(true)
-		console.log("handle bad Recipe is clicked")
-	} else {
-		setBadRecipeState(false)
-		console.log("handle bad  Recipe is clicked again")
-	}
-  }	
-	function showHomeOnly(){
-		setGoodRecipeState(false);
-		setBadRecipeState(false);
-		setSpicyRecipeState(false);
-	}
-
-	function goodRecipeRender() {
-		if (goodRecipeState){
-			setGoodRecipeState(false)
-		} else {
-			setGoodRecipeState(true)
-		}
-	}
 function clearBody(){
 	setGoodRecipeState(false);
 	setBadRecipeState(false);
@@ -65,36 +26,31 @@ function clearBody(){
 function navbarUpdate(){
 	//debugger;
 	switch (recipes) {
-		case "home": clearBody(); showHomeOnly(); console.log("Got here"); break;
+		case "home": clearBody(); setHomeRecipeState(true); break;
 		case "good": clearBody(); setGoodRecipeState(true); break;
 		case "bad": clearBody(); setBadRecipeState(true); break;
 		case "spicy": clearBody(); setSpicyRecipeState(true); break;
-		default: console.log("this is recipes" + {recipes}.toString); setSpicyRecipeState(true);
 	}
  }
-    useEffect(() => {navbarUpdate({recipes}); });
+    useEffect(() => {navbarUpdate(); });
   return (
     <div className="App">
       <header className="App-header">
+		{homeRecipeState &&
+		<div>
 		Welcome to the Super Secret Cookbook 
+		</div>
+		}
         <img src={logo} className="App-logo" alt="logo" />
+	{homeRecipeState && 
         <p>
          Tyler's super secret cookbook. We have all sorts of recipes for you to check out! 
-	<div>
-		<button className="NavigationButton" onClick={showHomeOnly} > View Home </button>
-		<button className="NavigationButton" onClick={goodRecipeRender}>  View the Good stuff </button>
-		<button className= "NavigationButton"  onClick={handleBadRecipeClick}> View the shitty stuff </button>
-		<button className= "NavigationButton" onClick={handleSpicyClick}>View the Spicy Stuff </button>
-	</div>
         </p>
-	<div>
-		
-	</div>
+	}
 	<div>
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 		{ spicyRecipeState ? < SpicyRecipes/> : null} 
-		Navbar Context {recipes}
 	</div>
 	</header>
 	    </div>
