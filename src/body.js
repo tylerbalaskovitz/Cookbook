@@ -5,7 +5,7 @@ import BadRecipes from './recipes/BadRecipes.js';
 import SpicyRecipes from './recipes/SpicyRecipes.js';
 import ImportedButton from './buttons/buttons.js';
 import React, {useState} from 'react';
-
+import {NavbarContext} from './NavbarContext.js';
 
 function Body(){
 	//Having the state set before the return statement but still withhin the function body
@@ -53,7 +53,21 @@ function Body(){
 			setGoodRecipeState(true)
 		}
 	}
+function clearBody(){
+	setGoodRecipeState(false);
+	setBadRecipeState(false);
+	setSpicyRecipeState(false);
+}
 
+function navbarUpdate(){
+	{clearBody()}
+	switch ({NavbarContext}) {
+		case "home": break;
+		case "good": setGoodRecipeState(true); break;
+		case "bad": setBadRecipeState(true); break;
+		case "spicy": setSpicyRecipeState(true); break;
+	}
+ }
   return (
     <div className="App">
       <header className="App-header">
@@ -75,6 +89,7 @@ function Body(){
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 		{ spicyRecipeState ? < SpicyRecipes/> : null} 
+		Navbar Context {NavbarContext}
 	</div>
 	</header>
 	    </div>
