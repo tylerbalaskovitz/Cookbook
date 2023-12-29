@@ -7,6 +7,7 @@ import ImportedButton from './buttons/buttons.js';
 import React,{ useState, useEffect} from 'react';
 import {useContext} from 'react';
 import {NavbarContext} from './NavbarContext.js';
+import BodyGreeting from './BodyGreeting.js';
 
 function Body(){
 	//Having the state set before the return statement but still withhin the function body
@@ -18,6 +19,7 @@ function Body(){
 
 
 function clearBody(){
+	setHomeRecipeState(false)
 	setGoodRecipeState(false);
 	setBadRecipeState(false);
 	setSpicyRecipeState(false);
@@ -36,18 +38,8 @@ function navbarUpdate(){
   return (
     <div className="App">
       <header className="App-header">
-		{homeRecipeState &&
-		<div>
-		Welcome to the Super Secret Cookbook 
-		</div>
-		}
-        <img src={logo} className="App-logo" alt="logo" />
-	{homeRecipeState && 
-        <p>
-         Tyler's super secret cookbook. We have all sorts of recipes for you to check out! 
-        </p>
-	}
 	<div>
+		{ homeRecipeState ? <BodyGreeting /> : null }
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 		{ spicyRecipeState ? < SpicyRecipes/> : null} 
