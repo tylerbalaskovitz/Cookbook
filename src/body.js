@@ -89,7 +89,7 @@ function navbarUpdate(){
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 		{ spicyRecipeState ? < SpicyRecipes/> : null} 
-		Navbar Context {NavbarContext}
+		Navbar Context {NavbarContext.recipes}
 	</div>
 	</header>
 	    </div>
