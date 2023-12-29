@@ -62,16 +62,16 @@ function clearBody(){
 	setSpicyRecipeState(false);
 }
 
-function navbarUpdate(){
-	{clearBody()}
-	switch ({recipes}) {
+function navbarUpdate(recipes){
+	clearBody();
+	switch (recipes) {
 		case "home": break;
 		case "good": setGoodRecipeState(true); break;
 		case "bad": setBadRecipeState(true); break;
 		case "spicy": setSpicyRecipeState(true); break;
 	}
  }
-    useEffect(() => {{navbarUpdate}  });
+    useEffect(() => {navbarUpdate({recipes}); });
   return (
     <div className="App">
       <header className="App-header">
