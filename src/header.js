@@ -23,9 +23,6 @@ function Header() {
 		<button className= "NavigationButton" onClick={badRecipes}> View the shitty stuff </button>
 		<button className= "NavigationButton" onClick={spicyRecipes}>View the Spicy Stuff </button>
 	</p>
-	<div>
-	Recipe for switch {recipes}	
-	</div>
 	</div>
   );
 }
