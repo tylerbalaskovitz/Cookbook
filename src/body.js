@@ -16,6 +16,7 @@ function Body(){
   const [badRecipeState, setBadRecipeState] = useState(false);
   const [spicyRecipeState, setSpicyRecipeState] = useState(false);
   const {recipes} = useContext(NavbarContext);
+  const [cookingTimerState, setCookingTimerState] = useState(false);
 
 
 function clearBody(){
@@ -32,6 +33,7 @@ function navbarUpdate(){
 		case "good": clearBody(); setGoodRecipeState(true); break;
 		case "bad": clearBody(); setBadRecipeState(true); break;
 		case "spicy": clearBody(); setSpicyRecipeState(true); break;
+		case "timer": clearBody(); setCookingTimerState(true); break;
 	}
  }
     useEffect(() => {navbarUpdate(); });
