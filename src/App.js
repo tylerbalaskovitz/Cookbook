@@ -8,19 +8,21 @@ import Header from './header.js';
 import Body from './body.js';
 import Footer from './footer.js';
 import {NavbarContext} from './NavbarContext.js';
-//Uncomment out when finishing the other components food, and what not.
-export const RecipeContext = createContext("");
+import {BackgroundImageContext} from './BackgroundImageContext.js'
 
 function App() {
   const [recipes, setRecipes] = useState("");
+  const [backgroundImage, setBackgroundImage] = useState("");
 
   return (
 
     <div className="App">
 	<NavbarContext.Provider value = {{recipes, setRecipes}}>	
+	<BackgroundImageContext.Provider value = {{backgroundImage, setBackgroundImage}}>
 	<Header />
 	<Body />
 	<Footer />
+	</BackgroundImageContext.Provider> 
 	</NavbarContext.Provider>	
     </div>
   );
