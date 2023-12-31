@@ -22,6 +22,9 @@ function turnOnTimer(){
 }
   return (
 	<div>
+		<button className="TimerButton"> Start </button>
+		 <button className="TimerButton">Stop </button>
+		 <button className="TimerButton">Reset </button>
     </div>
   );
 }
