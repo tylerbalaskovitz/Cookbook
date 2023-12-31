@@ -13,6 +13,7 @@ function Header() {
 	function goodRecipes () {{setRecipes("good")}};
 	function badRecipes () {{setRecipes("bad")}};
 	function spicyRecipes () {{setRecipes("spicy")}};
+	function timer() {{setRecipes("timer")}};
 	
   return (
 	<div>
@@ -22,6 +23,7 @@ function Header() {
 		<button className="NavigationButton" onClick={goodRecipes}>  View the Good stuff </button>
 		<button className= "NavigationButton" onClick={badRecipes}> View the shitty stuff </button>
 		<button className= "NavigationButton" onClick={spicyRecipes}>View the Spicy Stuff </button>
+		<button className= "NavigationButton" onClick={timer}>Timer </button>
 	</p>
 	</div>
   );

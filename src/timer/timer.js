@@ -1,4 +1,3 @@
-import './GoodRecipes.css';
 import React, {useState, useEffect} from 'react';
 
 
@@ -12,9 +11,11 @@ const [hours, setHours] = useState(0);
 const [days, setDays] = useState(0);
 
 useEffect(() => {
+/*
 const interval = setInterval(() => getTime, 1000);
 
 return (() => clearInterval(interval);
+*/
 }, []);
 
 function turnOnTimer(){	

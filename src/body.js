@@ -26,7 +26,7 @@ function clearBody(){
 	setGoodRecipeState(false);
 	setBadRecipeState(false);
 	setSpicyRecipeState(false);
-	setCookingTimerState(false):
+	setCookingTimerState(false);
 }
 
 function navbarUpdate(){
