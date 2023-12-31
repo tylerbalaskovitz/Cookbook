@@ -8,6 +8,8 @@ import React,{ useState, useEffect} from 'react';
 import {useContext} from 'react';
 import {NavbarContext} from './NavbarContext.js';
 import BodyGreeting from './BodyGreeting.js';
+import Timer from './timer/timer.js';
+
 
 function Body(){
 	//Having the state set before the return statement but still withhin the function body
@@ -24,6 +26,7 @@ function clearBody(){
 	setGoodRecipeState(false);
 	setBadRecipeState(false);
 	setSpicyRecipeState(false);
+	setCookingTimerState(false):
 }
 
 function navbarUpdate(){
@@ -45,6 +48,7 @@ function navbarUpdate(){
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 		{ spicyRecipeState ? < SpicyRecipes/> : null} 
+		{ cookingTimerState ? <Timer /> : null }
 	</div>
 	</header>
 	    </div>
