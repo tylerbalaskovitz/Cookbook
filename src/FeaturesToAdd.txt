@@ -9,3 +9,4 @@ Search for recipes?
 Incorporate Props in the cookbook (already did this with data values being passed in for each recipe in their respective section)
 Incorporate another Context to be used throughout the app that will render a background image based on the current recipe selected.
 Have it so only one recipe can be displayed at a time as well
+Refactor the CSS file as well as other files depending on it for styling
