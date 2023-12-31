@@ -15,6 +15,7 @@ import SugarCookieList from './goodRecipeComponents/SugarCookiesData.json'
 function GoodRecipes() {
   return (
     <div className="GoodRecipes">
+    <div className="GoodRecipesStyling">
       <header className="GoodRecipes-header">
 		These are the Good Recipes. Take a Pick
         <p>
@@ -33,6 +34,7 @@ function GoodRecipes() {
 	<Pizza pizzaList = {PizzaList} />	
 	</div>
 	</header>
+	</div>
     </div>
   );
 }
