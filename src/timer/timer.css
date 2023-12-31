@@ -1,3 +1,9 @@
+.TimerData{
+	background-color: white;
+	border: 5px solid black;
+	padding: 50px;
+	color: black;
+}
 
 .TimerButton {
 	border: 30px;

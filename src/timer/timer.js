@@ -23,9 +23,10 @@ function turnOnTimer(){
 	(timerOn ? setTimerOn(false) : setTimerOn(true));
 }
   return (
-	<div className="TimerData">
-		<div>Hours {hours} : Minutes {minutes} : Seconds {seconds}
+	<div >
+		<div className="TimerData">Hours {hours} : Minutes {minutes} : Seconds {seconds}
 	</div>
+	
 		<button className="TimerButton"> Start </button>
 		 <button className="TimerButton">Stop </button>
 		 <button className="TimerButton">Reset </button>
