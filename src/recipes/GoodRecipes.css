@@ -3,9 +3,11 @@
 }
 
 .GoodRecipes{
-	background-color: "white";	
 	margin: 30px;
 	padding: 30px;
+	border: 10px solid black;
+	width: 50%;
+	
 }
 
 .GoodRecipes-header{
