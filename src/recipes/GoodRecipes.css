@@ -4,7 +4,14 @@
 
 .GoodRecipes{
 	background-color: "white";	
-	
+	margin: 30px;
+	padding: 30px;
+}
+
+.GoodRecipes-header{
+	background-color: "white";	
+	margin: 30px;
+	padding: 30px;
 }
 
 .App-logo {
