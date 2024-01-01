@@ -1,4 +1,4 @@
-import './GoodRecipes.css';
+import './RecipeStyling.css';
 import CrapfilledCreamSoup from './badRecipeComponents/CrapfilledCreamSoup.js';
 import DiarheaDejour from './badRecipeComponents/DiarheaDeJour.js';
 import ShitSandwich from './badRecipeComponents/shitSandwich.js';
@@ -19,6 +19,7 @@ const [crapFilledCreamSoupList, setCrapFilledCreamSoupList] = useState(CrapFille
 
   return (
     <div className="GoodRecipes">
+    <div className="GoodRecipesStyling">
       <div className="GoodRecipes-header">These are the Bad Recipes. Take a Pick
        Welcome to the recipes section where things get awfully delicious 
 	<div>
@@ -32,6 +33,7 @@ const [crapFilledCreamSoupList, setCrapFilledCreamSoupList] = useState(CrapFille
 	</div>
 	<div>
 		<CrapfilledCreamSoup crapFilledCreamSoupList={crapFilledCreamSoupList} />
+	</div>
 	</div>
 	</div>
     </div>

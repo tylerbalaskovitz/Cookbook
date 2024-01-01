@@ -1,4 +1,4 @@
-import './GoodRecipes.css';
+import './RecipeStyling.css';
 //components being put here
 import React, {useState} from 'react';
 
@@ -24,6 +24,7 @@ const [phaalCurryList, setPhaalCurryList] = useState(PhaalCurryList)
   return (
     <div className="GoodRecipes">
       <div className="GoodRecipes-header">
+	    <div className="GoodRecipesStyling">
       These are the spiciest recipes that we could find. Enjoy as your face melts 
 	<div>
 		<KimchiJjigae kimchiJjigaeList={kimchiJjigaeList} /> 	
@@ -36,6 +37,7 @@ const [phaalCurryList, setPhaalCurryList] = useState(PhaalCurryList)
 	</div>
 	<div>
 		<PhaalCurry phaalCurryList = {phaalCurryList} />
+		</div>
 	</div>
 	</div>
     </div>

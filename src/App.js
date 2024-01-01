@@ -11,7 +11,7 @@ import {NavbarContext} from './NavbarContext.js';
 import {BackgroundImageContext} from './BackgroundImageContext.js'
 
 function App() {
-  const [recipes, setRecipes] = useState("");
+  const [recipes, setRecipes] = useState("home");
   const [backgroundImage, setBackgroundImage] = useState("");
 
   return (

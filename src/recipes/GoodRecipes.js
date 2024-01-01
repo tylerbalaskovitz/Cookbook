@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import './GoodRecipes.css';
+import './RecipeStyling.css';
 import React, {useState} from 'react';
 
 import BeefMeatballs from './goodRecipeComponents/BeefMeatballs.js';
