@@ -19,7 +19,7 @@ const [crapFilledCreamSoupList, setCrapFilledCreamSoupList] = useState(CrapFille
 
   return (
     <div className="GoodRecipes">
-    <div className="GoodRecipesStyling">
+    <div className="RecipeBorder">
       <div className="GoodRecipes-header">These are the Bad Recipes. Take a Pick
        Welcome to the recipes section where things get awfully delicious 
 	<div>

@@ -15,7 +15,7 @@ import SugarCookieList from './goodRecipeComponents/SugarCookiesData.json'
 function GoodRecipes() {
   return (
     <div className="GoodRecipes">
-    <div className="GoodRecipesStyling">
+    <div className="RecipeBorder">
       <header className="GoodRecipes-header">
 		These are the Good Recipes. Take a Pick
         <p>

@@ -23,8 +23,8 @@ const [phaalCurryList, setPhaalCurryList] = useState(PhaalCurryList)
 
   return (
     <div className="GoodRecipes">
-      <div className="GoodRecipes-header">
-	    <div className="GoodRecipesStyling">
+	    <div className="RecipeBorder">
+	      <div className="GoodRecipes-header">
       These are the spiciest recipes that we could find. Enjoy as your face melts 
 	<div>
 		<KimchiJjigae kimchiJjigaeList={kimchiJjigaeList} /> 	
