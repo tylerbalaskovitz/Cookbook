@@ -40,10 +40,10 @@ function renderRecipeButton() {
 		<div>
 		How to Cook
 		</div>
-		<li className="CookingSteps">
+		<ol className="CookingSteps">
 		  {beefMeatballsList.map(BeefMeatballsList => {
-			return (<TaskMapper taskMapper={BeefMeatballsList}/>)})} 
-		</li>
+			return (<li><TaskMapper taskMapper={BeefMeatballsList}/></li>)})} 
+		</ol>
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			{renderRecipe ? "Hide Recipe" : "See Recipe"}
 		</button>
