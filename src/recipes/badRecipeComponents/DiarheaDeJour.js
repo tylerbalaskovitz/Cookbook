@@ -1,4 +1,4 @@
-import './GoodRecipes.css';
+import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import DiarheaDeJourImage from '../../images/DiarheaDejour.jpg'
 import TaskMapper from '../../taskMapper.js'

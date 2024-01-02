@@ -1,0 +1,53 @@
+PipeWire 'pipewire-0' [1.0.0, Tbone@TboneArchLinux, cookie:2858631934]
+ └─ Clients:
+        31. pipewire                            [1.0.0, Tbone@TboneArchLinux, pid:1819]
+        32. Firefox                             [1.0.0, Tbone@TboneArchLinux, pid:895]
+        34. WirePlumber                         [1.0.0, Tbone@TboneArchLinux, pid:1818]
+        35. WirePlumber [export]                [1.0.0, Tbone@TboneArchLinux, pid:1818]
+        70. wpctl                               [1.0.0, Tbone@TboneArchLinux, pid:5060]
+
+Audio
+ ├─ Devices:
+ │      48. TU106 High Definition Audio Controller [alsa]
+ │      49. Built-in Audio                      [alsa]
+ │  
+ ├─ Sinks:
+ │  *   62. Built-in Audio Analog Stereo        [vol: 0.40]
+ │  
+ ├─ Sink endpoints:
+ │  
+ ├─ Sources:
+ │  *   63. Built-in Audio Analog Stereo        [vol: 1.00]
+ │  
+ ├─ Source endpoints:
+ │  
+ └─ Streams:
+        65. Firefox                                                     
+             67. output_FL       > ALC298 Analog:playback_FL	[init]
+             69. output_FR       > ALC298 Analog:playback_FR	[init]
+
+Video
+ ├─ Devices:
+ │      42. Integrated Camera                   [v4l2]
+ │      43. Integrated Camera                   [v4l2]
+ │      44. Integrated Camera                   [v4l2]
+ │      45. Integrated Camera                   [v4l2]
+ │      46. Integrated Camera: Integrated C     [libcamera]
+ │      47. Integrated Camera: Integrated I     [libcamera]
+ │  
+ ├─ Sinks:
+ │  
+ ├─ Sink endpoints:
+ │  
+ ├─ Sources:
+ │  *   54. Integrated Camera (V4L2)           
+ │      56. Integrated Camera (V4L2)           
+ │      58. Built-in Front Camera              
+ │      60. Built-in Front Camera              
+ │  
+ ├─ Source endpoints:
+ │  
+ └─ Streams:
+
+Settings
+ └─ Default Configured Node Names:

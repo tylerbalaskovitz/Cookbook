@@ -3,7 +3,7 @@
 }
 
 .NavigationButton{
-background-color: gray; /* Green */
+background-color: #282c34;/* Green */
   border: none;
   color: white;
   padding: 15px 24px;
@@ -51,11 +51,3 @@ background-color: black; /* Green */
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

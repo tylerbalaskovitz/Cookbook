@@ -1,4 +1,4 @@
-import './GoodRecipes.css';
+import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import SugarCookiesImage from '../../images/sugarcookie.jpg'
 import TaskMapper from '../../taskMapper.js'
