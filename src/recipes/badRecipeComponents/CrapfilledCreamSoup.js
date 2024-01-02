@@ -33,7 +33,7 @@ return (
 		<div className="PictureOfRecipe">
 		<img src={CrapFilledCreamSoupImage} className="FoodImage" alt="food" />
 		</div>
-		<li>
+		<li className="CookingSteps">
 		  {crapFilledCreamSoupList.map(CrapFilledCreamSoupList => {
 			return (<TaskMapper taskMapper={CrapFilledCreamSoupList}/>)})} 
 		</li>

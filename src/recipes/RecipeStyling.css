@@ -18,9 +18,15 @@
 	height: 70%;
 
 }
+
 .food{
+/* used as an alternative to food image */
+}
+
+.CookingDescription{
 
 }
+
 .recipeButton{
 background-color: #282c34;/* Green */
   border: none;
@@ -50,8 +56,9 @@ background-color: black; /* Green */
 }
 
 .CookingSteps{
-
-
+  text-align: left;
+  counter-reset: css-counter 0; 
+  counter-increment: css-counter 1;
 }
 
 .GoodRecipes-header{

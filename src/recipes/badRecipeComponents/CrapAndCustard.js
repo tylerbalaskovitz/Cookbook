@@ -27,13 +27,13 @@ function renderRecipeButton() {
 	</header>
 	{renderRecipe && 
 	    <div>
-	    <div className="CookingSteps">
+	    <div className="CookingDescription">
 		Crap and Custard is an old time classic that is shared with the friends and family through generations of poverty, despair, and comedy. So, have a laugh and share with your unwitting friends, inlaws and strangers
 		</div>
 		<div className="PictureOfRecipe">
 		<img src={CrapAndCustardImage} className="FoodImage" alt="food" />
 		</div>
-		<li>
+		<li className="CookingSteps" >
 		  {crapAndCustardList.map(CrapAndCustardList => {
 			return (<TaskMapper taskMapper={CrapAndCustardList}/>)})} 
 		</li>
