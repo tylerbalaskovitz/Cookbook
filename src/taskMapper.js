@@ -4,6 +4,8 @@ const TaskMapper = ({taskMapper}) => {
 	return (
 		<div>
 		{taskMapper.step}
+		<p>
+		</p>
 		</div>
 	);
 }

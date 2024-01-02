@@ -2,9 +2,11 @@ import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import RecipeImage from '../../images/beefmeatballs.jpg'
 import TaskMapper from '../../taskMapper.js'
+import IngredientMapper from '../../IngredientMapper.js'
 import BeefMeatballsList from './BeefMeatballsData.json'
+import Ingredients from './BeefMeetballsIngredients.json'
 
-function BeefMeatballs ({beefMeatballsList}) {
+function BeefMeatballs ({beefMeatballsList, ingredientsList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
 
 function renderRecipeButton() {
@@ -29,25 +31,8 @@ function renderRecipeButton() {
 	    <div>
 	    <div className="CookingSteps">
 	    <li>
-	    "1 pound ground beef
-
-2 teaspoons gochujang (Korean hot pepper paste)
-
-1 teaspoon kosher salt
-
-1 teaspoon freshly ground black pepper
-
-1 tablespoon soy sauce
-
-2 teaspoons grated fresh ginger (heated to 150 F degrees (65 degrees C) to deactivate enzymes, or soaked in 1 tablespoon vinegar for 5 minutes)
-
-4 cloves garlic, finely minced
-
-⅓ cup thinly sliced green onions, plus more for garnish
-
-½ cup finely crushed buttery round crackers (such as Ritz®)
-
-toasted sesame seeds for garnish"
+		  {ingredientsList.map(Ingredients => {
+			return (<IngredientMapper mapper = {Ingredients}/>)})} 
 	</li>
 		</div>
 		<div className="PictureOfRecipe">
