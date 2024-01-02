@@ -29,14 +29,16 @@ function renderRecipeButton() {
 	</header>
 	{renderRecipe && 
 	    <div>
-	    <div className="CookingSteps">
-	    <li>
-		  {ingredientsList.map(Ingredients => {
-			return (<IngredientMapper mapper = {Ingredients}/>)})} 
-	</li>
-		</div>
 		<div className="PictureOfRecipe">
 		<img src={RecipeImage} className="FoodImage" alt="food" />
+		</div>
+	    <div> Ingredients </div>
+	    <div className="CookingSteps">
+		  {ingredientsList.map(Ingredients => {
+			return (<IngredientMapper mapper = {Ingredients}/>)})} 
+		</div>
+		<div>
+		How to Cook
 		</div>
 		<li className="CookingSteps">
 		  {beefMeatballsList.map(BeefMeatballsList => {
