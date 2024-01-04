@@ -9,6 +9,7 @@ import SugarCookies from './goodRecipeComponents/SugarCookies.js';
 
 import BeefMeatballsList from './goodRecipeComponents/BeefMeatballsData.json'
 import Ingredients from './goodRecipeComponents/BeefMeetballsIngredients.json'
+import JiaoziIngredients from './goodRecipeComponents/JiaoziIngredients.json'
 import JiaoziList from './goodRecipeComponents/JiaoziData.json'
 import PizzaList from './goodRecipeComponents/PizzaData.json'
 import SugarCookieList from './goodRecipeComponents/SugarCookiesData.json'
@@ -26,7 +27,7 @@ function GoodRecipes() {
 	<SugarCookies sugarCookiesList={SugarCookieList} />
 	</div>
 	<div>
-	<Jiaozi jiaoziList = {JiaoziList} />	
+	<Jiaozi jiaoziList = {JiaoziList} ingredientsList={JiaoziIngredients}/>	
 	</div>
 	<div>
 	<BeefMeatballs beefMeatballsList = {BeefMeatballsList} ingredientsList={Ingredients} />

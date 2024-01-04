@@ -2,9 +2,11 @@ import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import JiaoziImage from '../../images/jiaozi.jpg'
 import TaskMapper from '../../taskMapper.js'
+import IngredientMapper from '../../IngredientMapper.js'
 import JiaoziList from './JiaoziData.json'
+import Ingredients from './JiaoziIngredients.json'
 
-function Jiaozi ({jiaoziList}) {
+function Jiaozi ({jiaoziList, ingredientsList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
 
 function renderRecipeButton() {
@@ -27,42 +29,19 @@ function renderRecipeButton() {
 	</header>
 	{renderRecipe && 
 	    <div>
-	    <div className="CookingSteps">
-		    8 ounces
-
-    Napa cabbage (about 1/4 head), plus extra leaves for lining if steaming
-    8 ounces
-
-    ground pork
-    1/2 bunch
-
-    scallions (green and white parts), finely chopped
-    1/2 cup
-
-    finely chopped garlic chives
-    1
-
-    clove garlic, finely chopped
-    2 teapoons
-
-    freshly grated peeled ginger
-    2 tablespoons
-
-    soy sauce
-    1/2 teaspoon
-
-    toasted (Asian) sesame oil
-    1 pound
-
-    round wheat dumpling or potsticker wrappers
-		</div>
 		<div className="PictureOfRecipe">
 		<img src={JiaoziImage} className="FoodImage" alt="food" />
 		</div>
-		<li className="CookingSteps">
+		    <div> Ingredients </div>
+		    <div className="CookingSteps">
+			  {ingredientsList.map(Ingredients => {
+				return (<IngredientMapper mapper = {Ingredients}/>)})} 
+		   </div>
+		<div> How To Cook </div>
+		<ol className="CookingSteps">
 		  {jiaoziList.map(JiaoziList => {
-			return (<TaskMapper taskMapper={JiaoziList}/>)})} 
-		</li>
+			return (<li><TaskMapper taskMapper={JiaoziList}/></li>)})} 
+		</ol>
 		<button className="recipeButton" onClick={renderRecipeButton}> 
 			{renderRecipe ? "Hide Recipe" : "See Recipe"}
 		</button>

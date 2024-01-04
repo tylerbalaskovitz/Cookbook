@@ -10,7 +10,6 @@ import {NavbarContext} from './NavbarContext.js';
 import BodyGreeting from './BodyGreeting.js';
 import Timer from './timer/timer.js';
 
-
 function Body(){
 	//Having the state set before the return statement but still withhin the function body
   const [homeRecipeState, setHomeRecipeState] = useState(false);
