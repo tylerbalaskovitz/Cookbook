@@ -1,7 +1,5 @@
 ====FEATURES TO ADD====
 Make navbar and style it so it fits in nicely with the rest of the app.(create/needs styling)
-Have Navbar clicks open and close components. (done)
-When clicking to open another component, have the other components close.(done)
 Have routing occur to another area, mainly the timer section 
 Create a timer
 Style so it looks somewhat professional
@@ -13,3 +11,4 @@ Refactor the CSS file as well as other files depending on it for styling
 Incorporate all recipe components into one component so and have it render the specified image, ingredients and steps all in one place so refactoring is easier, and it does it with just one set of data
 Create a Node.js Server to read data from a MongoDB
 Move MongoDB storage location to the folder where the rest of the other data will go
+Create backend and database for data to be gathered from
