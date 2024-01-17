@@ -34,7 +34,7 @@ function clearBody(){
 function navbarUpdate(){
 	//debugger;
 	switch (recipes) {
-		case "home": clearBody(); setHomeRecipeState(true); break;
+		case "home": clearBody(); setBackgroundImage(""); setHomeRecipeState(true); break;
 		case "good": clearBody(); setGoodRecipeState(true); break;
 		case "bad": clearBody(); setBadRecipeState(true); break;
 		case "spicy": clearBody(); setSpicyRecipeState(true); break;
@@ -44,8 +44,7 @@ function navbarUpdate(){
     useEffect(() => {navbarUpdate(); });
   return (
     <div className="App">
-      <header className="App-header">
-      <div className="BGImage" style={{ backgroundImage: `url(${backgroundImage})`,
+      <div className="App-header" style={{ backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         }}>
 	<div>
@@ -56,7 +55,6 @@ function navbarUpdate(){
 		{ cookingTimerState ? <Timer /> : null }
 	</div>
 	</div>
-	</header>
 	</div>
   );
 }
