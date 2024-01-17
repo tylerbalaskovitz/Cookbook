@@ -5,7 +5,7 @@ import {Link, BrowserRouter as Router, Routes, Route, Navigate, createContext} f
 import {useContext} from 'react';
 import GoodRecipes from './recipes/GoodRecipes';
 import ImportedButton from './buttons/buttons.js';
-import {NavbarContext} from './NavbarContext.js';
+import {NavbarContext} from './Contexts.js';
 
 function Header() {
 	const {recipes, setRecipes} = useContext(NavbarContext);

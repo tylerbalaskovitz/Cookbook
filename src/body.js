@@ -6,7 +6,8 @@ import SpicyRecipes from './recipes/SpicyRecipes.js';
 import ImportedButton from './buttons/buttons.js';
 import React,{ useState, useEffect} from 'react';
 import {useContext} from 'react';
-import {NavbarContext} from './NavbarContext.js';
+import {NavbarContext} from './Contexts.js';
+import {BackgroundImageContext} from './Contexts.js';
 import BodyGreeting from './BodyGreeting.js';
 import Timer from './timer/timer.js';
 
@@ -17,6 +18,7 @@ function Body(){
   const [badRecipeState, setBadRecipeState] = useState(false);
   const [spicyRecipeState, setSpicyRecipeState] = useState(false);
   const {recipes} = useContext(NavbarContext);
+  const {backgroundImage} = useContext(BackgroundImageContext);
   const [cookingTimerState, setCookingTimerState] = useState(false);
 
 
@@ -42,12 +44,14 @@ function navbarUpdate(){
   return (
     <div className="App">
       <header className="App-header">
+      <div style={{ backgroundImage: `url(${logo})`}}>
 	<div>
 		{ homeRecipeState ? <BodyGreeting /> : null }
 		{ goodRecipeState ? <GoodRecipes /> : null} 
 		{ badRecipeState ? < BadRecipes/> : null} 
 		{ spicyRecipeState ? < SpicyRecipes/> : null} 
 		{ cookingTimerState ? <Timer /> : null }
+	</div>
 	</div>
 	</header>
 	    </div>
