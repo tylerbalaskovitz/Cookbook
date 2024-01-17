@@ -13,12 +13,13 @@ import Timer from './timer/timer.js';
 
 function Body(){
 	//Having the state set before the return statement but still withhin the function body
+
   const [homeRecipeState, setHomeRecipeState] = useState(false);
   const [goodRecipeState, setGoodRecipeState] = useState(false);
   const [badRecipeState, setBadRecipeState] = useState(false);
   const [spicyRecipeState, setSpicyRecipeState] = useState(false);
   const {recipes} = useContext(NavbarContext);
-  const {backgroundImage} = useContext(BackgroundImageContext);
+  const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
   const [cookingTimerState, setCookingTimerState] = useState(false);
 
 
@@ -44,7 +45,7 @@ function navbarUpdate(){
   return (
     <div className="App">
       <header className="App-header">
-      <div style={{ backgroundImage: `url(${logo})`,
+      <div style={{ backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         }}>
 	<div>
