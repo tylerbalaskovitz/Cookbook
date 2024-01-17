@@ -1,17 +1,21 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
-import SikSikWatImage from '../../images/siksikwat.jpg'
+import RecipeImage from '../../images/siksikwat.jpg'
 import SikSikWatList from './SikSikWatData.json'
+import {useContext} from 'react';
+import {BackgroundImageContext} from '../../Contexts.js'
 import {TaskMapper} from '../../Mappers.js'
 import {IngredientMapper} from '../../Mappers.js'
 
 function SikSikWat ({sikSikWatList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
+const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
 
 function renderRecipeButton() {
 	if (renderRecipe){
 		setRenderRecipe(false)
 	} else {
+		setBackgroundImage(RecipeImage);
 		setRenderRecipe(true)
 	}
 }
@@ -32,7 +36,7 @@ function renderRecipeButton() {
 		Sik sik wat description here
 		</div>
 		<div className="PictureOfRecipe">
-		<img src={SikSikWatImage} className="FoodImage" alt="food" />
+		<img src={RecipeImage} className="FoodImage" alt="food" />
 		</div>
 		<li className="CookingSteps">
 		  {sikSikWatList.map(SikSikWatList => {
