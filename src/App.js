@@ -21,9 +21,9 @@ function App() {
 	<BackgroundImageContext.Provider value = {{backgroundImage, setBackgroundImage}}>
 	<Header />
 	<Body />
-	<Footer />
 	</BackgroundImageContext.Provider> 
 	</NavbarContext.Provider>	
+	<Footer />
     </div>
   );
 }
