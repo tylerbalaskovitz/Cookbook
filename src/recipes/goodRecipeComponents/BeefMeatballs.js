@@ -4,16 +4,19 @@ import {useContext} from 'react';
 import RecipeImage from '../../images/beefmeatballs.jpg'
 import {TaskMapper} from '../../Mappers.js'
 import {IngredientMapper} from '../../Mappers.js'
+import {BackgroundImageContext} from '../../Contexts.js'
 import BeefMeatballsList from './BeefMeatballsData.json'
 import Ingredients from './BeefMeetballsIngredients.json'
 
 function BeefMeatballs ({beefMeatballsList, ingredientsList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
+const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
 
 function renderRecipeButton() {
 	if (renderRecipe){
 		setRenderRecipe(false)
 	} else {
+		setBackgroundImage(RecipeImage);
 		setRenderRecipe(true)
 	}
 }

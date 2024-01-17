@@ -1,18 +1,22 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
-import JiaoziImage from '../../images/jiaozi.jpg'
+import {useContext} from 'react';
+import RecipeImage from '../../images/jiaozi.jpg'
 import {TaskMapper} from '../../Mappers.js'
 import {IngredientMapper} from '../../Mappers.js'
+import {BackgroundImageContext} from '../../Contexts.js'
 import JiaoziList from './JiaoziData.json'
 import Ingredients from './JiaoziIngredients.json'
 
 function Jiaozi ({jiaoziList, ingredientsList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
+const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
 
 function renderRecipeButton() {
 	if (renderRecipe){
 		setRenderRecipe(false)
 	} else {
+		setBackgroundImage(RecipeImage);
 		setRenderRecipe(true)
 	}
 }
@@ -30,7 +34,7 @@ function renderRecipeButton() {
 	{renderRecipe && 
 	    <div>
 		<div className="PictureOfRecipe">
-		<img src={JiaoziImage} className="FoodImage" alt="food" />
+		<img src={RecipeImage} className="FoodImage" alt="food" />
 		</div>
 		    <div> Ingredients </div>
 		    <div className="CookingSteps">
