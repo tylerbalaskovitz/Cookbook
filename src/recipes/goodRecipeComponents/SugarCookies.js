@@ -1,17 +1,21 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
-import SugarCookiesImage from '../../images/sugarcookie.jpg'
+import RecipeImage from '../../images/sugarcookie.jpg'
+import {useContext} from 'react';
+import {BackgroundImageContext} from '../../Contexts.js'
 import {TaskMapper} from '../../Mappers.js'
 import {IngredientMapper} from '../../Mappers.js'
 import SugarCookieList from './SugarCookiesData.json'
 
 function SugarCookies ({sugarCookiesList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
+const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
 
 function renderRecipeButton() {
 	if (renderRecipe){
 		setRenderRecipe(false)
 	} else {
+		setBackgroundImage(RecipeImage);
 		setRenderRecipe(true)
 	}
 }
@@ -32,7 +36,7 @@ function renderRecipeButton() {
 		Insert Sugar Cookies Description	
 		</div>
 		<div className="PictureOfRecipe">
-		<img src={SugarCookiesImage} className="FoodImage" alt="food" />
+		<img src={RecipeImage} className="FoodImage" alt="food" />
 		</div>
 		<li className="CookingSteps">
 		  {sugarCookiesList.map(SugarCookieList => {

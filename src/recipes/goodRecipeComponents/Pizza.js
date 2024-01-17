@@ -1,17 +1,21 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
-import PizzaImage from '../../images/pizza.jpg'
+import RecipeImage from '../../images/pizza.jpg'
+import {useContext} from 'react';
+import {BackgroundImageContext} from '../../Contexts.js'
 import {TaskMapper} from '../../Mappers.js'
 import {IngredientMapper} from '../../Mappers.js'
 import PizzaList from './PizzaData.json'
 
 function Pizza ({pizzaList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);
+const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
 
 function renderRecipeButton() {
 	if (renderRecipe){
 		setRenderRecipe(false)
 	} else {
+		setBackgroundImage(RecipeImage);
 		setRenderRecipe(true)
 	}
 }
@@ -32,7 +36,7 @@ function renderRecipeButton() {
 		Pizza description	
 		</div>
 		<div className="PictureOfRecipe">
-		<img src={PizzaImage} className="FoodImage" alt="food" />
+		<img src={RecipeImage} className="FoodImage" alt="food" />
 		</div>
 		<li className="CookingSteps">
 		  {pizzaList.map(PizzaList => {
