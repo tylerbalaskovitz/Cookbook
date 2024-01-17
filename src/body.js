@@ -10,6 +10,9 @@ import {NavbarContext} from './Contexts.js';
 import {BackgroundImageContext} from './Contexts.js';
 import BodyGreeting from './BodyGreeting.js';
 import Timer from './timer/timer.js';
+import Jiaozi from './images/jiaozi.jpg'
+import KimchiJjigae from './images/kimchijjigae.jpg'
+import CrapAndCustard from './images/crapandcustard.jpg'
 
 function Body(){
 	//Having the state set before the return statement but still withhin the function body
@@ -22,6 +25,16 @@ function Body(){
   const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
   const [cookingTimerState, setCookingTimerState] = useState(false);
 
+function backgroundCheck(){
+	if (backgroundImage==="") {
+		switch (recipes) {
+		case "good": setBackgroundImage(Jiaozi); break;
+		case "bad":setBackgroundImage(CrapAndCustard); break;
+		case "spicy":setBackgroundImage(KimchiJjigae); break;
+		case "timer":
+		}
+	}
+}
 
 function clearBody(){
 	setHomeRecipeState(false)
@@ -34,10 +47,10 @@ function clearBody(){
 function navbarUpdate(){
 	//debugger;
 	switch (recipes) {
-		case "home": clearBody(); setBackgroundImage(""); setHomeRecipeState(true); break;
-		case "good": clearBody(); setGoodRecipeState(true); break;
-		case "bad": clearBody(); setBadRecipeState(true); break;
-		case "spicy": clearBody(); setSpicyRecipeState(true); break;
+		case "home": clearBody(); backgroundCheck(); setBackgroundImage(""); setHomeRecipeState(true); break;
+		case "good": clearBody(); backgroundCheck();setGoodRecipeState(true); break;
+		case "bad": clearBody(); backgroundCheck();setBadRecipeState(true); break;
+		case "spicy": clearBody(); backgroundCheck(); setSpicyRecipeState(true); break;
 		case "timer": clearBody(); setCookingTimerState(true); break;
 	}
  }
