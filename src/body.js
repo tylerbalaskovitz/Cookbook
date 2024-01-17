@@ -45,7 +45,7 @@ function navbarUpdate(){
   return (
     <div className="App">
       <header className="App-header">
-      <div style={{ backgroundImage: `url(${backgroundImage})`,
+      <div className="BGImage" style={{ backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         }}>
 	<div>
@@ -57,7 +57,7 @@ function navbarUpdate(){
 	</div>
 	</div>
 	</header>
-	    </div>
+	</div>
   );
 }
 
