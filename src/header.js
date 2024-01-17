@@ -5,14 +5,22 @@ import {useContext} from 'react';
 import GoodRecipes from './recipes/GoodRecipes';
 import ImportedButton from './buttons/buttons.js';
 import {NavbarContext} from './Contexts.js';
+import {BackgroundImageContext} from './Contexts.js';
+
 
 function Header() {
 	const {recipes, setRecipes} = useContext(NavbarContext);
-	function goHome (){{ setRecipes("home")}};
-	function goodRecipes () {{setRecipes("good")}};
-	function badRecipes () {{setRecipes("bad")}};
-	function spicyRecipes () {{setRecipes("spicy")}};
-	function timer() {{setRecipes("timer")}};
+	const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
+
+	function clearBackground(){
+		setBackgroundImage("");
+	}
+
+	function goHome (){{ clearBackground(); setRecipes("home")}};
+	function goodRecipes () {{clearBackground();setRecipes("good")}};
+	function badRecipes () {{clearBackground();setRecipes("bad")}};
+	function spicyRecipes () {{clearBackground();setRecipes("spicy")}};
+	function timer() {{clearBackground();setRecipes("timer")}};
 	
   return (
 	<div>
