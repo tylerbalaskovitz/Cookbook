@@ -8,7 +8,7 @@ import Header from './header.js';
 import Body from './body.js';
 import Footer from './footer.js';
 import {NavbarContext} from './Contexts.js';
-import {BackgroundImageContext} from './BackgroundImageContext.js'
+import {BackgroundImageContext} from './Contexts.js'
 
 function App() {
   const [recipes, setRecipes] = useState("home");

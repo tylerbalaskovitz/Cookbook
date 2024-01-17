@@ -1,7 +1,7 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import CrapFilledCreamSoupImage from '../../images/CreamAndCrap.jpg'
-import TaskMapper from '../../taskMapper.js'
+import {TaskMapper} from '../../Mappers.js'
 import CrapFilledCreamSoupList from './CrapFilledCreamSoupData.json'
 
 function CrapfilledCreamSoup({crapFilledCreamSoupList}) {

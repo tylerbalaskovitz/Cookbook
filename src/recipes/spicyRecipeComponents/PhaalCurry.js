@@ -1,7 +1,8 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import PhaalCurryImage from '../../images/phaalcurry.jpg'
-import TaskMapper from '../../taskMapper.js'
+import {TaskMapper} from '../../Mappers.js'
+import {IngredientMapper} from '../../Mappers.js'
 import PhaalCurryList from './PhaalCurryData.json'
 
 function PhaalCurry ({phaalCurryList}) {

@@ -1,7 +1,7 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import ShitSandwichImage from '../../images/shit-sandwich.png'
-import TaskMapper from '../../taskMapper.js'
+import {TaskMapper} from '../../Mappers.js'
 import ShitSandwichList from './ShitSandwichData.json'
 
 function ShitSandwich({shitSandwichList}) {

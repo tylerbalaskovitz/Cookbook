@@ -1,7 +1,8 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import HuoGuoImage from '../../images/huoguo.jpg'
-import TaskMapper from '../../taskMapper.js'
+import {TaskMapper} from '../../Mappers.js'
+import {IngredientMapper} from '../../Mappers.js'
 import HuoGuoList from './HuoGuoData.json'
 
 function HuoGuo ({huoGuoList}) {

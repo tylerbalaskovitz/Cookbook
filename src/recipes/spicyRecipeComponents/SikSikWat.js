@@ -1,8 +1,9 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import SikSikWatImage from '../../images/siksikwat.jpg'
-import TaskMapper from '../../taskMapper.js'
 import SikSikWatList from './SikSikWatData.json'
+import {TaskMapper} from '../../Mappers.js'
+import {IngredientMapper} from '../../Mappers.js'
 
 function SikSikWat ({sikSikWatList}) {
 const [renderRecipe, setRenderRecipe] = useState(false);

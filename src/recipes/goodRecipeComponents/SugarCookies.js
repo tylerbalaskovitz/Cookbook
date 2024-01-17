@@ -1,7 +1,8 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import SugarCookiesImage from '../../images/sugarcookie.jpg'
-import TaskMapper from '../../taskMapper.js'
+import {TaskMapper} from '../../Mappers.js'
+import {IngredientMapper} from '../../Mappers.js'
 import SugarCookieList from './SugarCookiesData.json'
 
 function SugarCookies ({sugarCookiesList}) {

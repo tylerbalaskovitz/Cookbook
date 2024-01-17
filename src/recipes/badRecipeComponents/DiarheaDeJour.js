@@ -1,7 +1,7 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import DiarheaDeJourImage from '../../images/DiarheaDejour.jpg'
-import TaskMapper from '../../taskMapper.js'
+import {TaskMapper} from '../../Mappers.js'
 import DiarheaDeJourList from './DiarheaDeJourData.json'
 
 function DiarheaDejour({diarheaDeJourList}) {

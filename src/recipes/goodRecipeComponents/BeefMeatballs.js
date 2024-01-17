@@ -1,8 +1,8 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import RecipeImage from '../../images/beefmeatballs.jpg'
-import TaskMapper from '../../taskMapper.js'
-import IngredientMapper from '../../IngredientMapper.js'
+import {TaskMapper} from '../../Mappers.js'
+import {IngredientMapper} from '../../Mappers.js'
 import BeefMeatballsList from './BeefMeatballsData.json'
 import Ingredients from './BeefMeetballsIngredients.json'
 

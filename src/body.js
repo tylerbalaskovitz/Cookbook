@@ -44,7 +44,9 @@ function navbarUpdate(){
   return (
     <div className="App">
       <header className="App-header">
-      <div style={{ backgroundImage: `url(${logo})`}}>
+      <div style={{ backgroundImage: `url(${logo})`,
+        backgroundSize: 'cover',
+        }}>
 	<div>
 		{ homeRecipeState ? <BodyGreeting /> : null }
 		{ goodRecipeState ? <GoodRecipes /> : null} 

@@ -1,7 +1,8 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import KimchiJjigaeImage from '../../images/kimchijjigae.jpg'
-import TaskMapper from '../../taskMapper.js'
+import {TaskMapper} from '../../Mappers.js'
+import {IngredientMapper} from '../../Mappers.js'
 import KimchiJjigaeList from './KimchiJjigaeData.json'
 
 function KimchiJjigae ({kimchiJjigaeList}) {

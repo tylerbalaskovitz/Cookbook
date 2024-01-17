@@ -1,8 +1,8 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import JiaoziImage from '../../images/jiaozi.jpg'
-import TaskMapper from '../../taskMapper.js'
-import IngredientMapper from '../../IngredientMapper.js'
+import {TaskMapper} from '../../Mappers.js'
+import {IngredientMapper} from '../../Mappers.js'
 import JiaoziList from './JiaoziData.json'
 import Ingredients from './JiaoziIngredients.json'
 

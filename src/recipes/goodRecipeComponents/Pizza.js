@@ -1,7 +1,8 @@
 import '../RecipeStyling.css';
 import React, {useState} from 'react';
 import PizzaImage from '../../images/pizza.jpg'
-import TaskMapper from '../../taskMapper.js'
+import {TaskMapper} from '../../Mappers.js'
+import {IngredientMapper} from '../../Mappers.js'
 import PizzaList from './PizzaData.json'
 
 function Pizza ({pizzaList}) {
