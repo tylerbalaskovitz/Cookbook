@@ -4,6 +4,7 @@ import RecipeImage from '../images/timer.jpg'
 import {useContext} from 'react';
 import {NavbarContext} from '../Contexts.js';
 import {BackgroundImageContext} from '../Contexts.js';
+import {RecipeContext} from '../Contexts.js';
 
 
 
@@ -28,9 +29,14 @@ function turnOnTimer(){
 	(timerOn ? setTimerOn(false) : setTimerOn(true));
 }
   return (
-	<div >
-		<div className="TimerData">Hours {hours} : Minutes {minutes} : Seconds {seconds}
-	</div>
+	<div className="TimerBox">
+		<div className="RecipeTimer"> 
+			<header> Recipe </header>
+			{RecipeContext}
+		</div>
+		<div className="TimerData">
+		Hours {hours} : Minutes {minutes} : Seconds {seconds}
+		</div>
 	
 		<button className="TimerButton"> Start </button>
 		 <button className="TimerButton">Stop </button>
