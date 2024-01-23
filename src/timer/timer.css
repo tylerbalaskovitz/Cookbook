@@ -6,10 +6,17 @@
 }
 
 .TimerButton {
-	border: 30px;
-	background-color: red;
-	width: 500px;
-	padding: 45px;
-	height: 100%;
-	border: 20px solid black;
+	border: 4px;
+	background-color: white;
+	width: 25%;
+	height: 30%;
+	border: 4px solid black;
+}
+.TimerButton:hover {
+	border: 4px;
+	background-color: white;
+	font-size: calc(10px + 1vmin);
+	width: 27%;
+	height: 32%;
+	border: 4px solid black;
 }

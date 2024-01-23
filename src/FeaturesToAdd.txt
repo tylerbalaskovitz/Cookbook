@@ -12,3 +12,7 @@ Incorporate all recipe components into one component so and have it render the s
 Create a Node.js Server to read data from a MongoDB
 Move MongoDB storage location to the folder where the rest of the other data will go
 Create backend and database for data to be gathered from
+Change recipe names to buttons have a tool tip, that when you hover over says see recipe
+Material UI or Bootstrap for the Navbar 
+Look at restaurant websites and try to replicate it.
+

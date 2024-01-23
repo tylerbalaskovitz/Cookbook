@@ -18,7 +18,7 @@ function GoodRecipes() {
   return (
     <div className="GoodRecipes">
     <div className="RecipeBorder">
-      <header className="GoodRecipes-header">
+      <div className="GoodRecipes-header">
 		These are the Good Recipes. Take a Pick
         <p>
        Welcome to the recipes section where things get awfully delicious 
@@ -35,7 +35,7 @@ function GoodRecipes() {
 	<div>	
 	<Pizza pizzaList = {PizzaList} />	
 	</div>
-	</header>
+	</div>
 	</div>
     </div>
   );
