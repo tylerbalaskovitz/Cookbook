@@ -37,7 +37,7 @@ function turnOnTimer(){
 			<div>  </div>
 		</div>
 		<div className="TimerData">
-		Hours {hours} : Minutes {minutes} : Seconds {seconds}
+		Hours : {hours}  Minutes : {minutes} Seconds : {seconds}
 		</div>
 	
 		<button className="TimerButton"> Start </button>
