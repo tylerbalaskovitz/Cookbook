@@ -13,9 +13,19 @@ const [timerOn, setTimerOn] = useState(false);
 const [seconds, setSeconds] = useState(0);
 const [minutes, setMinutes] = useState(0);
 const [hours, setHours] = useState(0);
-const [days, setDays] = useState(0);
 const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
 const {recipeName, setRecipeName} = useContext(RecipeContext);
+
+function cookingTimer(){
+    var sec = 30;
+    var timer = setInterval(function(){
+        
+        if (seconds <  0) {
+            
+
+        }
+    }, 1000);
+}
 
 useEffect(() => {
 setBackgroundImage(RecipeImage);
