@@ -15,9 +15,11 @@ const [minutes, setMinutes] = useState(0);
 const [hours, setHours] = useState(0);
 const [days, setDays] = useState(0);
 const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
+const {recipeName, setRecipeName} = useContext(RecipeContext);
 
 useEffect(() => {
 setBackgroundImage(RecipeImage);
+setRecipeName({recipeName});
 /*
 const interval = setInterval(() => getTime, 1000);
 
@@ -32,7 +34,7 @@ function turnOnTimer(){
 	<div className="TimerBox">
 		<div className="RecipeTimer"> 
 			<header> Recipe </header>
-			{RecipeContext}
+			<div>  </div>
 		</div>
 		<div className="TimerData">
 		Hours {hours} : Minutes {minutes} : Seconds {seconds}
