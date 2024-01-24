@@ -10,34 +10,28 @@ import {RecipeContext} from '../Contexts.js';
 
 function Timer () {
 const [timerOn, setTimerOn] = useState(false);
-const [seconds, setSeconds] = useState(0);
-const [minutes, setMinutes] = useState(0);
-const [hours, setHours] = useState(0);
+const [seconds, setSeconds] = useState(15);
+const [minutes, setMinutes] = useState(1);
+const [hours, setHours] = useState(1);
 const {backgroundImage, setBackgroundImage} = useContext(BackgroundImageContext);
 const {recipeName, setRecipeName} = useContext(RecipeContext);
 
-function cookingTimer(timerOn){
-	
-    var timer = setInterval(function(){
-    if (timerOn){
+function countdown() {
+if (timerOn === true){
 	if (seconds <  0) {
-		if minutes > 0 {
-			setMinutes(minutes--);
-		} if hours > 0 {
-			setHours(hours--);
-		}
-	} else {
-		setSeconds(seconds--);
-	}
-	if (seconds === 0 && minutes == 0 && hours === 0) {
-		alert("Times Up");
-	}
-    }, 1000);
+		if (minutes > 0) { setMinutes(minutes--); }
+		if (hours > 0) { setHours(hours--); }
+	} else { setSeconds(seconds--); }
+	if (seconds === 0 && minutes == 0 && hours === 0) { alert("Times Up"); }
     }
 }
 
-useEffect(() => {
+function cookingTimer(timerOn){
+      setInterval(countdown, 1000);
+}
 
+useEffect(() => {
+countdown();
 setBackgroundImage(RecipeImage);
 setRecipeName({recipeName});
 /*
@@ -63,8 +57,8 @@ function turnOffTimer(){
 		Hours : {hours}  Minutes : {minutes} Seconds : {seconds}
 		</div>
 	
-		<button onClick={turnOnTimer} className="TimerButton"> Start </button>
-		 <button onClick={turnOnTimer} className="TimerButton">Stop </button>
+		<button className="TimerButton" onClick={turnOnTimer}> Start </button>
+		 <button className="TimerButton" onClick={turnOffTimer}>Stop </button>
 		 <button className="TimerButton">Reset </button>
     </div>
   );
