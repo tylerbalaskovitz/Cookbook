@@ -15,4 +15,4 @@ Create backend and database for data to be gathered from
 Change recipe names to buttons have a tool tip, that when you hover over says see recipe
 Material UI or Bootstrap for the Navbar 
 Look at restaurant websites and try to replicate it.
-
+JSON Web Token
