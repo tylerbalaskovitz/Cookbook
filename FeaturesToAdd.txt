@@ -18,3 +18,4 @@ Look at restaurant websites and try to replicate it.
 JSON Web Token
 GitHub Actions
 Work on this for 6 months to a year
+Test
