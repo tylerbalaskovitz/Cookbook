@@ -5,7 +5,6 @@ var bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({extended: true })); 
 router.use(bodyParser.json());
 var User = require('./User');
-module.expors = router;
 
 //Creating a new user
 router.post('/', function(req, res) {
@@ -20,6 +19,12 @@ router.post('/', function(req, res) {
 		});
 });
 
+//Performs a GET Request to get all of the users in the database
+router.get('/', function (req, res) {
+	User.find({}, function (err, users) {
+		if (err) return res.status(500).send("There was a problem finding the users.");
+		res.status(200).send(users);
+		});
+});
 
-
-
+module.expors = router;
