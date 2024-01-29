@@ -27,4 +27,4 @@ router.get('/', function (req, res) {
 		});
 });
 
-module.expors = router;
+module.exports = router;
