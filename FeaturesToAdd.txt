@@ -9,7 +9,7 @@ Incorporate another Context to be used throughout the app that will render a bac
 Have it so only one recipe can be displayed at a time as well
 Refactor the CSS file as well as other files depending on it for styling
 Incorporate all recipe components into one component so and have it render the specified image, ingredients and steps all in one place so refactoring is easier, and it does it with just one set of data
-Create a Node.js Server to read data from a MongoDB
+Create a Node.js Server to read data from a MongoDB. Currently here, but will need to rewrite the POST and GET requests so they're NOT doing callbacks but a more modern approach to this.
 Move MongoDB storage location to the folder where the rest of the other data will go
 Create backend and database for data to be gathered from
 Change recipe names to buttons have a tool tip, that when you hover over says see recipe
