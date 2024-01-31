@@ -32,4 +32,13 @@ router.get('/', async function (req, res) {
 		}
 });
 
+router.get('/:id', async function (req, res) {
+		try {
+		const users = await User.findById(req.params.id);
+			res.status(200).send(users);
+			console.log(users);
+		} catch (err) {
+			res.status(500).send("There was a problem getting the users");
+			console.log(err);
+		}
 module.exports = router;
