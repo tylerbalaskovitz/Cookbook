@@ -20,3 +20,14 @@ router.post('/', async function (req, res) {
 	}
 });
 	
+//Performing a GET request to all of the recipes in the database
+router.get('/', async function (req, res) {
+	try {
+	const recipes = await Recipe.find({});
+		res.status(200).send(recipes);
+		console.log(recipes);
+	} catch (err) {
+		res.status(500).send("There was a problem getting the recipes");
+		console.log(err);
+	}
+});
