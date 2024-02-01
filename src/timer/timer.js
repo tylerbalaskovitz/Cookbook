@@ -37,7 +37,7 @@ useEffect(() => {
 			if (minutes > 0) { setMinutes((prevMinutes) => prevMinutes - 1); }
 			if (hours > 0) { setHours((prevHours) => prevHours - 1); }
 		} else { setSeconds((prevSeconds) => prevSeconds - 1); }
-		if (seconds === 0 && minutes == 0 && hours === 0) { alert("Times Up"); }
+		if (seconds === 0 && minutes === 0 && hours === 0) { alert("Times Up"); }
 	    }
     }, 1000);
 
