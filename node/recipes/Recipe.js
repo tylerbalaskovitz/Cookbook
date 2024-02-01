@@ -1,6 +1,7 @@
 //used for recipe information
 var mongoose = require('mongoose');
 var RecipeSchema = new mongoose.Schema({
+	name: String,
 	step: String,
 	complete: boolean,
 	ingredient: String

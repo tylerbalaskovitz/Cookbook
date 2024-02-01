@@ -11,6 +11,7 @@ router.post('/', async function (req, res) {
 	try {
 		const recipe = await Recipe.create(req.body);
 		res.status(200).send({
+			name: req.body.name,
 			step: req.body.step,
 			complete: req.body.complete,
 			ingredient: req.body.ingredient,
